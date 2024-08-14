@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="use-native-click" id="drawer">
+      <nav class="menu-drawer">
+        <div>
+          <div class="fade" id="searchOverlay">
+            <div id="bigSearchInput">Search</div>
+          </div>
+          <prime-seg class="vertical-center">
+            <x-major>
+              <prime-seg class="vertical-center" id="mainNavStuff">
+                <x-minor>
+                  <ul>
+                    <li>
+                      <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+                    </li>
+                  </ul>
+                </x-minor>
+                <x-major class="org-selection">
+                  <div class="rack vertical-center">
+                    <h5 class="active-color">Looney Tunes - OC</h5>
+                    <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                      <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                    </svg>
+                    <div class="org-selection-clear">
+                      <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </x-major>
+              </prime-seg>
+            </x-major>
+            <x-minor>
+              <svg class="active-color user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="user-settings.html">
+                <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+              </svg>
+            </x-minor>
+          </prime-seg>
+          <script></script>
+          <div class="clear-wrap menu-drawer-search-cleanup">
+            <div class="search-widget" data-target="search-results.html">
+              <div class="searchfield">
+                <div class="icon-search"></div>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <div class="fade" id="searchOverlay">
+          <div id="bigSearchInput">Search</div>
+        </div>
+        <prime-seg class="vertical-center">
+          <x-major>
+            <prime-seg class="vertical-center" id="mainNavStuff">
+              <x-minor>
+                <ul>
+                  <li>
+                            <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+                  </li>
+                </ul>
+              </x-minor>
+              <x-major class="org-selection">
+                <div class="rack vertical-center">
+                  <h5 class="active-color">Looney Tunes - OC</h5>
+                          <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                          </svg>
+                  <div class="org-selection-clear">
+                            <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                              <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                            </svg>
+                  </div>
+                </div>
+              </x-major>
+            </prime-seg>
+          </x-major>
+          <x-minor>
+                    <svg class="active-color user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="user-settings.html">
+                      <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                    </svg>
+          </x-minor>
+        </prime-seg>
+        <script></script>
+      </nav>
+      <div class="modal window" id="areYouSureModal">
+        <div class="clear-wrap">
+          <h4 class="center-justify">You Are About To Delete:<br>"First Notification Setting"</h4>
+        </div>
+        <div class="clear-wrap" style="margin-top: 25px; margin-bottom: 60px">
+          <p class="center-justify"><strong>Are You Sure?</strong></p>
+        </div>
+        <div class="clear-wrap" style="margin-top: 25px; margin-bottom: -20px">
+          <prime-seg>
+            <x-major></x-major>
+            <x-minor>
+              <div class="rack with-dividers vertical-center"><a class="close-modal">Cancel</a>
+                        <div class="button-module"><a class="close-modal button" href="">Delete</a></div>
+              </div>
+            </x-minor>
+          </prime-seg>
+        </div>
+      </div>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar"><a class="super-admin-nav dark bar-link" href="support.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Admin</div>
+                        </x-major>
+                      </prime-seg></a>
+            <prime-seg class="vertical-center org-section">
+              <x-major>
+                <h4 class="sidebar-org-label" data-goto="org.html">Looney Tunes - OC</h4>
+              </x-major>
+              <x-minor>
+                        <svg class="recent-orgs-trigger trigger file-icon" width="21px" height="21px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#subOrgDropdown">
+                          <path d="M 895.99999,0 H 128.00001 C 75.200012,0 32.000012,43.2 32.000012,96 v 832 c 0,52.8 43.2,96 95.999998,96 h 767.99998 c 52.8,0 96,-43.2 96,-96 V 96 c 0,-52.8 -43.2,-96 -96,-96 z m -32,896 H 160.00001 V 128 H 863.99999 Z M 288.00001,448 H 736 v 64 H 288.00001 Z m 0,128 H 736 v 64 H 288.00001 Z m 0,128 H 736 v 64 H 288.00001 Z m 0,-384 H 736 v 64 H 288.00001 Z"></path>
+                        </svg>
+                <div class="fade" id="subOrgDropdown">
+                  <div class="wrap" style="margin-top: 45px; margin-bottom: 45px">
+                    <prime-seg>
+                      <x-major>
+                        <div class="rack">
+                                  <svg class="add-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="m 891.68001,554.68799 v -85.376 H 554.68799 V 132.32 H 469.312 V 469.31199 H 132.31999 v 85.376 H 469.312 V 891.68 h 85.37599 V 554.68799 Z"></path>
+                                  </svg>
+                          <div>Add a Member</div>
+                        </div>
+                      </x-major>
+                      <x-minor><a class="microlink right-justify" href="org.html?focus=Members">View</a></x-minor>
+                    </prime-seg>
+                  </div>
+                  <div class="wrap" style="margin-top: 5px; margin-bottom: 25px">
+                    <div class="rack">
+                              <svg class="add-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                <path d="m 891.68001,554.68799 v -85.376 H 554.68799 V 132.32 H 469.312 V 469.31199 H 132.31999 v 85.376 H 469.312 V 891.68 h 85.37599 V 554.68799 Z"></path>
+                              </svg>
+                      <div>
+                        <prime-seg>
+                          <x-major>Add a Sub-Org</x-major>
+                          <x-minor></x-minor>
+                        </prime-seg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-wrap suborg-dropdown-org-section">
+                    <prime-seg class="suborg-dropdown-title">
+                      <x-major>
+                        <h5>Sub-Orgs:</h5>
+                      </x-major>
+                      <x-minor><a class="microlink" href="org.html">View All</a></x-minor>
+                    </prime-seg>
+                    <div class="suborg-dropdown-list">
+                      <div>SubOrg A</div>
+                      <div>SubOrg B</div>
+                      <div>SubOrg C</div>
+                    </div>
+                  </div>
+                </div>
+              </x-minor>
+            </prime-seg><a class="bar-link" href="dashboard.html?title=Dashboard">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-home"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Dashboard</div>
+                        </x-major>
+                      </prime-seg></a><a class="bar-link" href="devices.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Devices</div>
+                        </x-major>
+                      </prime-seg></a><a class="bar-link" href="notifications.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Notifications</div>
+                        </x-major>
+                      </prime-seg></a>
+          </div>
+        </x-minor>
+        <x-major>
+          <div id="content">
+            <panel-wrapper class="light">
+              <panel-inner style="padding-top: 25px; padding-bottom: 60px">
+                <div class="rack version-list">
+                    <div class="button-module"><a class="button" href="notifications.html" target="notifications.html">Version 1</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v2.html" target="notifications-v2.html">Version 2</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v3.html" target="notifications-v3.html">Version 3</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v4.html" target="notifications-v4.html">Version 4</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v5.html" target="notifications-v5.html">Version 5</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v6.html" target="notifications-v6.html">Version 6</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v7.html" target="notifications-v7.html">Version 7</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v8.html" target="notifications-v8.html">Version 8</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v9.html" target="notifications-v9.html">Version 9</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v10.html" target="notifications-v10.html">Version 10</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v11.html" target="notifications-v11.html">Version 11</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v12.html" target="notifications-v12.html">Version 12</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v13.html" target="notifications-v13.html">Version 13</a></div>
+                    <div class="button-module"><a class="button" href="notifications-v14.html" target="notifications-v14.html">Version 14</a></div>
+                    <div class="button-module"><a class="button" href="notifications-experience-v15.html" target="notifications-experience-v15.html">Version 15</a></div>
+                </div>
+                <div class="clear-wrap">
+                  <prime-seg class="vertical-center">
+                    <x-major>
+                      <h3>Notification Settings</h3>
+                    </x-major>
+                    <x-minor>
+                      <div class="rack vertical-center emphasize">
+                        <div>
+                                  <svg class="active-color add-template add-bubble-solid-icon" width="30px" height="30px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="new-notification-v3.html">
+                                    <path d="M 511.99998,0 C 794.59198,0 1024,229.408 1024,511.99998 1024,794.59198 794.59198,1024 511.99998,1024 229.408,1024 0,794.59198 0,511.99998 0,229.408 229.408,0 511.99998,0 Z m 277.952,548.41598 V 475.55199 H 548.44799 v -241.504 h -72.86401 v 241.504 H 234.07999 v 72.86399 h 241.50399 v 241.504 h 72.86401 v -241.504 z"></path>
+                                  </svg>
+                        </div>
+                        <div>
+                                  <svg class="active-color trigger cog-icon" width="30px" height="30px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#configSection">
+                                    <path d="m 849.408,590.60799 c -42.976,-74.432 -17.12,-169.824 57.72801,-213.184 L 826.624,237.96799 c -22.976,13.504 -49.728,21.216 -78.272,21.216 -86.04801,0 -155.77601,-70.20799 -155.77601,-156.79999 h -160.992 c 0.192,26.72 -6.464,53.824 -20.768,78.592 -42.976,74.43199 -138.528,99.77599 -213.472,56.60799 l -80.48,139.456 c 23.168,13.184 43.232,32.448 57.504,57.184 42.912,74.304 17.216,169.536 -57.376,212.96 l 80.512,139.456 c 22.912,-13.376 49.536,-20.992 77.92,-20.992 85.76,0 155.328,69.76001 155.744,155.96801 h 160.992 c -0.064,-26.464 6.624,-53.248 20.768,-77.76 42.912,-74.30401 138.20801,-99.68001 213.12001,-56.80001 l 80.51201,-139.456 c -23.00801,-13.184 -42.94401,-32.416 -57.15201,-56.992 z m -337.44001,87.296 c -91.584,0 -165.856,-74.272 -165.856,-165.856 0,-91.584 74.272,-165.856 165.856,-165.856 91.584,0 165.856,74.272 165.856,165.856 0,91.584 -74.272,165.856 -165.856,165.856 z"></path>
+                                  </svg>
+                        </div>
+                      </div>
+                    </x-minor>
+                  </prime-seg>
+                  <div class="drawer" id="configSection">
+                    <div class="wrap">
+                      <h5>Email:</h5>
+                      <div class="clear-wrap" style="margin-top: 10px; margin-bottom: 25px">
+                        <prime-seg class="vertical-center">
+                          <x-minor>
+                            <div class="is-object"></div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="bobross@megacorp.com" value="bobross@megacorp.com" id="rz29g" data-checked="true"/>
+                                  <label for="rz29g">bobross@megacorp.com</label></span>
+                              </div>
+                            </div>
+                          </x-minor>
+                          <x-major>
+                            <div class="sub default-label">
+                               [ <strong>default </strong>]</div>
+                          </x-major>
+                        </prime-seg>
+                        <div class="pseudo-sub">
+                          <div class="is-object"></div>
+                          <div class="checkbox-widget">
+                            <div class="form-element"><span class="checkbox">
+                                <input type="checkbox" name="anotherEmail@megacorp.com" value="anotheremail@megacorp.com" id="2arsa"/>
+                                <label for="2arsa">anotherEmail@megacorp.com</label></span>
+                            </div>
+                          </div>
+                          <div class="checkbox-widget">
+                            <div class="form-element"><span class="checkbox">
+                                <input type="checkbox" name="oneMoreEmail@megacorp.com" value="onemoreemail@megacorp.com" id="neet2" data-checked="true"/>
+                                <label for="neet2">oneMoreEmail@megacorp.com</label></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap"> 
+                  <x-segment of="3">
+                      <x-cell>
+                        <div class="wrap">
+                          <div class="heading-wrap dark">
+                            <prime-seg class="vertical-center">
+                              <x-major data-goto="edit-notification-v3.html?title=First_Notification_Setting">
+                                <h5 class="notification-card-title pseudo">First Notification Setting</h5>
+                              </x-major>
+                              <x-minor>
+                                <div class="rack">
+                                  <div>
+                                            <svg class="active-color edit-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="edit-notification.html?title=First_Notification_Setting">
+                                              <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color duplicate-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                              <path d="m 804.18347,168.29374 h 130.21859 c 23.75845,0 46.55072,9.43369 63.3581,26.23988 16.80064,16.80619 26.24094,39.59529 26.24094,63.35709 v 676.50885 c 0,23.76181 -9.4403,46.5509 -26.24094,63.35709 -16.80738,16.80615 -39.59965,26.24765 -63.3581,26.24765 H 369.88222 c -23.76516,0 -46.55073,-9.4415 -63.3581,-26.24765 -16.80067,-16.80619 -26.24098,-39.59528 -26.24098,-63.35709 v -18.22664 h 89.59908 v 18.22664 h 564.51984 v -669.3448 c -0.33548,-0.0772 -0.68438,-0.17756 -1.03327,-0.28564 -1.03327,1.72926 -2.6704,0.4246 -4.03243,-1.81417 -2.24098,-1.3587 -3.54263,-2.99531 -1.81157,-4.0375 -0.11407,-0.34739 -0.208,-0.68707 -0.28851,-1.02674 H 804.18347 Z M 654.1181,2.69123e-4 c 23.76516,0 46.55072,9.441417877 63.3581,26.239884877 16.80067,16.806187 26.24098,39.595284 26.24098,63.357087 V 766.1061 c 0,23.76952 -9.44031,46.55862 -26.24098,63.35708 -16.80738,16.80619 -39.59294,26.24761 -63.3581,26.24761 H 89.59826 c -23.75845,0 -46.550728,-9.44142 -63.358104,-26.24761 C 9.43949,812.66472 -8.205262e-4,789.87562 -8.205262e-4,766.1061 V 81.375564 C -8.205262e-4,36.430401 36.431934,2.69123e-4 81.379085,2.69123e-4 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color modal-trigger delete-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#areYouSureModal">
+                                              <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                            </svg>
+                                  </div>
+                                </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                          <div>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="target-div">
+                                  <div class="clicker-panel trigger" data-target="#FirstPopup"></div>
+                                  <div class="fade status-popper2" id="FirstPopup">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Connects/Disconnects" value="connects/disconnects" id="kv9q9" data-checked="true"/>
+                                          <label for="kv9q9">Connects/Disconnects</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="z8zp8" data-checked="true"/>
+                                          <label for="z8zp8">Check-Ins</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="WAN Failovers" value="wan-failovers" id="c0zmh" data-checked="true"/>
+                                          <label for="c0zmh">WAN Failovers</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                          <svg class="dot-dot-dot-icon" width="18px" height="18px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                            <path d="M 512 8.625 A 123.66102 123.66102 0 0 0 388.375 132.375 A 123.66102 123.66102 0 0 0 512 256 A 123.66102 123.66102 0 0 0 635.625 132.375 A 123.66102 123.66102 0 0 0 512 8.625 z M 512 388.375 A 123.66102 123.66102 0 0 0 388.375 512 A 123.66102 123.66102 0 0 0 512 635.625 A 123.66102 123.66102 0 0 0 635.625 512 A 123.66102 123.66102 0 0 0 512 388.375 z M 512 768 A 123.66102 123.66102 0 0 0 388.375 891.625 A 123.66102 123.66102 0 0 0 512 1015.375 A 123.66102 123.66102 0 0 0 635.625 891.625 A 123.66102 123.66102 0 0 0 512 768 z "></path>
+                                          </svg>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>
+                                  <div class="rack">
+                                    <div><strong>Email: </strong></div>
+                                    <div>
+                                      <div class="sub">Disconnects/Reconnects, Check-Ins</div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </x-major>
+                            </prime-seg>
+                          </div>
+                        </div>
+                      </x-cell>
+                      <x-cell>
+                        <div class="wrap">
+                          <div class="heading-wrap dark">
+                            <prime-seg class="vertical-center">
+                              <x-major data-goto="edit-notification-v3.html?title=Second_Notification_Setting">
+                                <h5 class="notification-card-title pseudo">Second Notification Setting</h5>
+                              </x-major>
+                              <x-minor>
+                                <div class="rack">
+                                  <div>
+                                            <svg class="active-color edit-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="edit-notification.html?title=Second_Notification_Setting">
+                                              <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color duplicate-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                              <path d="m 804.18347,168.29374 h 130.21859 c 23.75845,0 46.55072,9.43369 63.3581,26.23988 16.80064,16.80619 26.24094,39.59529 26.24094,63.35709 v 676.50885 c 0,23.76181 -9.4403,46.5509 -26.24094,63.35709 -16.80738,16.80615 -39.59965,26.24765 -63.3581,26.24765 H 369.88222 c -23.76516,0 -46.55073,-9.4415 -63.3581,-26.24765 -16.80067,-16.80619 -26.24098,-39.59528 -26.24098,-63.35709 v -18.22664 h 89.59908 v 18.22664 h 564.51984 v -669.3448 c -0.33548,-0.0772 -0.68438,-0.17756 -1.03327,-0.28564 -1.03327,1.72926 -2.6704,0.4246 -4.03243,-1.81417 -2.24098,-1.3587 -3.54263,-2.99531 -1.81157,-4.0375 -0.11407,-0.34739 -0.208,-0.68707 -0.28851,-1.02674 H 804.18347 Z M 654.1181,2.69123e-4 c 23.76516,0 46.55072,9.441417877 63.3581,26.239884877 16.80067,16.806187 26.24098,39.595284 26.24098,63.357087 V 766.1061 c 0,23.76952 -9.44031,46.55862 -26.24098,63.35708 -16.80738,16.80619 -39.59294,26.24761 -63.3581,26.24761 H 89.59826 c -23.75845,0 -46.550728,-9.44142 -63.358104,-26.24761 C 9.43949,812.66472 -8.205262e-4,789.87562 -8.205262e-4,766.1061 V 81.375564 C -8.205262e-4,36.430401 36.431934,2.69123e-4 81.379085,2.69123e-4 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color modal-trigger delete-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#areYouSureModal">
+                                              <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                            </svg>
+                                  </div>
+                                </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                          <div>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="target-div">
+                                  <div class="clicker-panel trigger" data-target="#SecondPopup"></div>
+                                  <div class="fade status-popper2" id="SecondPopup">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Connects/Disconnects" value="connects/disconnects" id="wb9z1" data-checked="true"/>
+                                          <label for="wb9z1">Connects/Disconnects</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="cl5n7" data-checked="true"/>
+                                          <label for="cl5n7">Check-Ins</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="WAN Failovers" value="wan-failovers" id="oazsj" data-checked="true"/>
+                                          <label for="oazsj">WAN Failovers</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                          <svg class="dot-dot-dot-icon" width="18px" height="18px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                            <path d="M 512 8.625 A 123.66102 123.66102 0 0 0 388.375 132.375 A 123.66102 123.66102 0 0 0 512 256 A 123.66102 123.66102 0 0 0 635.625 132.375 A 123.66102 123.66102 0 0 0 512 8.625 z M 512 388.375 A 123.66102 123.66102 0 0 0 388.375 512 A 123.66102 123.66102 0 0 0 512 635.625 A 123.66102 123.66102 0 0 0 635.625 512 A 123.66102 123.66102 0 0 0 512 388.375 z M 512 768 A 123.66102 123.66102 0 0 0 388.375 891.625 A 123.66102 123.66102 0 0 0 512 1015.375 A 123.66102 123.66102 0 0 0 635.625 891.625 A 123.66102 123.66102 0 0 0 512 768 z "></path>
+                                          </svg>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>
+                                  <div class="rack">
+                                    <div><strong>Email: </strong></div>
+                                    <div>
+                                      <div class="sub">Disconnects/Reconnects, Check-Ins</div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </x-major>
+                            </prime-seg>
+                          </div>
+                        </div>
+                      </x-cell>
+                      <x-cell>
+                        <div class="wrap">
+                          <div class="heading-wrap dark">
+                            <prime-seg class="vertical-center">
+                              <x-major data-goto="edit-notification-v3.html?title=Third_Notification_Setting">
+                                <h5 class="notification-card-title pseudo">Third Notification Setting</h5>
+                              </x-major>
+                              <x-minor>
+                                <div class="rack">
+                                  <div>
+                                            <svg class="active-color edit-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="edit-notification.html?title=Third_Notification_Setting">
+                                              <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color duplicate-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                              <path d="m 804.18347,168.29374 h 130.21859 c 23.75845,0 46.55072,9.43369 63.3581,26.23988 16.80064,16.80619 26.24094,39.59529 26.24094,63.35709 v 676.50885 c 0,23.76181 -9.4403,46.5509 -26.24094,63.35709 -16.80738,16.80615 -39.59965,26.24765 -63.3581,26.24765 H 369.88222 c -23.76516,0 -46.55073,-9.4415 -63.3581,-26.24765 -16.80067,-16.80619 -26.24098,-39.59528 -26.24098,-63.35709 v -18.22664 h 89.59908 v 18.22664 h 564.51984 v -669.3448 c -0.33548,-0.0772 -0.68438,-0.17756 -1.03327,-0.28564 -1.03327,1.72926 -2.6704,0.4246 -4.03243,-1.81417 -2.24098,-1.3587 -3.54263,-2.99531 -1.81157,-4.0375 -0.11407,-0.34739 -0.208,-0.68707 -0.28851,-1.02674 H 804.18347 Z M 654.1181,2.69123e-4 c 23.76516,0 46.55072,9.441417877 63.3581,26.239884877 16.80067,16.806187 26.24098,39.595284 26.24098,63.357087 V 766.1061 c 0,23.76952 -9.44031,46.55862 -26.24098,63.35708 -16.80738,16.80619 -39.59294,26.24761 -63.3581,26.24761 H 89.59826 c -23.75845,0 -46.550728,-9.44142 -63.358104,-26.24761 C 9.43949,812.66472 -8.205262e-4,789.87562 -8.205262e-4,766.1061 V 81.375564 C -8.205262e-4,36.430401 36.431934,2.69123e-4 81.379085,2.69123e-4 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color modal-trigger delete-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#areYouSureModal">
+                                              <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                            </svg>
+                                  </div>
+                                </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                          <div>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="target-div">
+                                  <div class="clicker-panel trigger" data-target="#ThirdPopup"></div>
+                                  <div class="fade status-popper2" id="ThirdPopup">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Connects/Disconnects" value="connects/disconnects" id="s2oij" data-checked="true"/>
+                                          <label for="s2oij">Connects/Disconnects</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="wphny" data-checked="true"/>
+                                          <label for="wphny">Check-Ins</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="WAN Failovers" value="wan-failovers" id="0ftgq" data-checked="true"/>
+                                          <label for="0ftgq">WAN Failovers</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                          <svg class="dot-dot-dot-icon" width="18px" height="18px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                            <path d="M 512 8.625 A 123.66102 123.66102 0 0 0 388.375 132.375 A 123.66102 123.66102 0 0 0 512 256 A 123.66102 123.66102 0 0 0 635.625 132.375 A 123.66102 123.66102 0 0 0 512 8.625 z M 512 388.375 A 123.66102 123.66102 0 0 0 388.375 512 A 123.66102 123.66102 0 0 0 512 635.625 A 123.66102 123.66102 0 0 0 635.625 512 A 123.66102 123.66102 0 0 0 512 388.375 z M 512 768 A 123.66102 123.66102 0 0 0 388.375 891.625 A 123.66102 123.66102 0 0 0 512 1015.375 A 123.66102 123.66102 0 0 0 635.625 891.625 A 123.66102 123.66102 0 0 0 512 768 z "></path>
+                                          </svg>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>
+                                  <div class="rack">
+                                    <div><strong>Email: </strong></div>
+                                    <div>
+                                      <div class="sub">Disconnects/Reconnects, Check-Ins</div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </x-major>
+                            </prime-seg>
+                          </div>
+                        </div>
+                      </x-cell>
+                      <x-cell>
+                        <div class="wrap">
+                          <div class="heading-wrap dark">
+                            <prime-seg class="vertical-center">
+                              <x-major data-goto="edit-notification-v3.html?title=Fourth_Notification_Setting">
+                                <h5 class="notification-card-title pseudo">Fourth Notification Setting</h5>
+                              </x-major>
+                              <x-minor>
+                                <div class="rack">
+                                  <div>
+                                            <svg class="active-color edit-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="edit-notification.html?title=Fourth_Notification_Setting">
+                                              <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color duplicate-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                              <path d="m 804.18347,168.29374 h 130.21859 c 23.75845,0 46.55072,9.43369 63.3581,26.23988 16.80064,16.80619 26.24094,39.59529 26.24094,63.35709 v 676.50885 c 0,23.76181 -9.4403,46.5509 -26.24094,63.35709 -16.80738,16.80615 -39.59965,26.24765 -63.3581,26.24765 H 369.88222 c -23.76516,0 -46.55073,-9.4415 -63.3581,-26.24765 -16.80067,-16.80619 -26.24098,-39.59528 -26.24098,-63.35709 v -18.22664 h 89.59908 v 18.22664 h 564.51984 v -669.3448 c -0.33548,-0.0772 -0.68438,-0.17756 -1.03327,-0.28564 -1.03327,1.72926 -2.6704,0.4246 -4.03243,-1.81417 -2.24098,-1.3587 -3.54263,-2.99531 -1.81157,-4.0375 -0.11407,-0.34739 -0.208,-0.68707 -0.28851,-1.02674 H 804.18347 Z M 654.1181,2.69123e-4 c 23.76516,0 46.55072,9.441417877 63.3581,26.239884877 16.80067,16.806187 26.24098,39.595284 26.24098,63.357087 V 766.1061 c 0,23.76952 -9.44031,46.55862 -26.24098,63.35708 -16.80738,16.80619 -39.59294,26.24761 -63.3581,26.24761 H 89.59826 c -23.75845,0 -46.550728,-9.44142 -63.358104,-26.24761 C 9.43949,812.66472 -8.205262e-4,789.87562 -8.205262e-4,766.1061 V 81.375564 C -8.205262e-4,36.430401 36.431934,2.69123e-4 81.379085,2.69123e-4 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color modal-trigger delete-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#areYouSureModal">
+                                              <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                            </svg>
+                                  </div>
+                                </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                          <div>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="target-div">
+                                  <div class="clicker-panel trigger" data-target="#FourthPopup"></div>
+                                  <div class="fade status-popper2" id="FourthPopup">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Connects/Disconnects" value="connects/disconnects" id="i5a08" data-checked="true"/>
+                                          <label for="i5a08">Connects/Disconnects</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="e3l42k" data-checked="true"/>
+                                          <label for="e3l42k">Check-Ins</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="WAN Failovers" value="wan-failovers" id="ybm3" data-checked="true"/>
+                                          <label for="ybm3">WAN Failovers</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                          <svg class="dot-dot-dot-icon" width="18px" height="18px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                            <path d="M 512 8.625 A 123.66102 123.66102 0 0 0 388.375 132.375 A 123.66102 123.66102 0 0 0 512 256 A 123.66102 123.66102 0 0 0 635.625 132.375 A 123.66102 123.66102 0 0 0 512 8.625 z M 512 388.375 A 123.66102 123.66102 0 0 0 388.375 512 A 123.66102 123.66102 0 0 0 512 635.625 A 123.66102 123.66102 0 0 0 635.625 512 A 123.66102 123.66102 0 0 0 512 388.375 z M 512 768 A 123.66102 123.66102 0 0 0 388.375 891.625 A 123.66102 123.66102 0 0 0 512 1015.375 A 123.66102 123.66102 0 0 0 635.625 891.625 A 123.66102 123.66102 0 0 0 512 768 z "></path>
+                                          </svg>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>
+                                  <div class="rack">
+                                    <div><strong>Email: </strong></div>
+                                    <div>
+                                      <div class="sub">Disconnects/Reconnects, Check-Ins</div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </x-major>
+                            </prime-seg>
+                          </div>
+                        </div>
+                      </x-cell>
+                      <x-cell>
+                        <div class="wrap">
+                          <div class="heading-wrap dark">
+                            <prime-seg class="vertical-center">
+                              <x-major data-goto="edit-notification-v3.html?title=Fifth_Notification_Setting">
+                                <h5 class="notification-card-title pseudo">Fifth Notification Setting</h5>
+                              </x-major>
+                              <x-minor>
+                                <div class="rack">
+                                  <div>
+                                            <svg class="active-color edit-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="edit-notification.html?title=Fifth_Notification_Setting">
+                                              <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color duplicate-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                              <path d="m 804.18347,168.29374 h 130.21859 c 23.75845,0 46.55072,9.43369 63.3581,26.23988 16.80064,16.80619 26.24094,39.59529 26.24094,63.35709 v 676.50885 c 0,23.76181 -9.4403,46.5509 -26.24094,63.35709 -16.80738,16.80615 -39.59965,26.24765 -63.3581,26.24765 H 369.88222 c -23.76516,0 -46.55073,-9.4415 -63.3581,-26.24765 -16.80067,-16.80619 -26.24098,-39.59528 -26.24098,-63.35709 v -18.22664 h 89.59908 v 18.22664 h 564.51984 v -669.3448 c -0.33548,-0.0772 -0.68438,-0.17756 -1.03327,-0.28564 -1.03327,1.72926 -2.6704,0.4246 -4.03243,-1.81417 -2.24098,-1.3587 -3.54263,-2.99531 -1.81157,-4.0375 -0.11407,-0.34739 -0.208,-0.68707 -0.28851,-1.02674 H 804.18347 Z M 654.1181,2.69123e-4 c 23.76516,0 46.55072,9.441417877 63.3581,26.239884877 16.80067,16.806187 26.24098,39.595284 26.24098,63.357087 V 766.1061 c 0,23.76952 -9.44031,46.55862 -26.24098,63.35708 -16.80738,16.80619 -39.59294,26.24761 -63.3581,26.24761 H 89.59826 c -23.75845,0 -46.550728,-9.44142 -63.358104,-26.24761 C 9.43949,812.66472 -8.205262e-4,789.87562 -8.205262e-4,766.1061 V 81.375564 C -8.205262e-4,36.430401 36.431934,2.69123e-4 81.379085,2.69123e-4 Z"></path>
+                                            </svg>
+                                  </div>
+                                  <div>
+                                            <svg class="active-color modal-trigger delete-icon" width="13px" height="13px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#areYouSureModal">
+                                              <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                            </svg>
+                                  </div>
+                                </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                          <div>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="target-div">
+                                  <div class="clicker-panel trigger" data-target="#FifthPopup"></div>
+                                  <div class="fade status-popper2" id="FifthPopup">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Connects/Disconnects" value="connects/disconnects" id="zwp35" data-checked="true"/>
+                                          <label for="zwp35">Connects/Disconnects</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="q3xndk" data-checked="true"/>
+                                          <label for="q3xndk">Check-Ins</label></span>
+                                      </div>
+                                    </div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input type="checkbox" name="WAN Failovers" value="wan-failovers" id="c6x3u" data-checked="true"/>
+                                          <label for="c6x3u">WAN Failovers</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                          <svg class="dot-dot-dot-icon" width="18px" height="18px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                            <path d="M 512 8.625 A 123.66102 123.66102 0 0 0 388.375 132.375 A 123.66102 123.66102 0 0 0 512 256 A 123.66102 123.66102 0 0 0 635.625 132.375 A 123.66102 123.66102 0 0 0 512 8.625 z M 512 388.375 A 123.66102 123.66102 0 0 0 388.375 512 A 123.66102 123.66102 0 0 0 512 635.625 A 123.66102 123.66102 0 0 0 635.625 512 A 123.66102 123.66102 0 0 0 512 388.375 z M 512 768 A 123.66102 123.66102 0 0 0 388.375 891.625 A 123.66102 123.66102 0 0 0 512 1015.375 A 123.66102 123.66102 0 0 0 635.625 891.625 A 123.66102 123.66102 0 0 0 512 768 z "></path>
+                                          </svg>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>
+                                  <div class="rack">
+                                    <div><strong>Email: </strong></div>
+                                    <div>
+                                      <div class="sub">Disconnects/Reconnects, Check-Ins</div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </x-major>
+                            </prime-seg>
+                          </div>
+                        </div>
+                      </x-cell>
+                  </x-segment>
+                </div>
+              </panel-inner>
+            </panel-wrapper>
+          </div>
+        </x-major>
+      </prime-seg>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>_$('[data-checked="true"]').attr('checked', 'checked');</script>

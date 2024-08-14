@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="use-native-click" id="drawer">
+      <nav class="menu-drawer">
+        <div>
+          <div class="fade" id="searchOverlay">
+            <div id="bigSearchInput">Search</div>
+          </div>
+          <prime-seg class="vertical-center">
+            <x-major>
+              <prime-seg class="vertical-center" id="mainNavStuff">
+                <x-minor>
+                  <ul>
+                    <li>
+                      <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+                    </li>
+                  </ul>
+                </x-minor>
+                <x-major class="org-selection">
+                  <div class="rack vertical-center">
+                    <h5 class="active-color">Looney Tunes - OC</h5>
+                    <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                      <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                    </svg>
+                    <div class="org-selection-clear">
+                      <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </x-major>
+              </prime-seg>
+            </x-major>
+            <x-minor>
+              <svg class="active-color user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="user-settings.html">
+                <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+              </svg>
+            </x-minor>
+          </prime-seg>
+          <script></script>
+          <div class="clear-wrap menu-drawer-search-cleanup">
+            <div class="search-widget" data-target="search-results.html">
+              <div class="searchfield">
+                <div class="icon-search"></div>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <div class="fade" id="searchOverlay">
+          <div id="bigSearchInput">Search</div>
+        </div>
+        <prime-seg class="vertical-center">
+          <x-major>
+            <prime-seg class="vertical-center" id="mainNavStuff">
+              <x-minor>
+                <ul>
+                  <li>
+                            <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+                  </li>
+                </ul>
+              </x-minor>
+              <x-major class="org-selection">
+                <div class="rack vertical-center">
+                  <h5 class="active-color">Looney Tunes - OC</h5>
+                          <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                          </svg>
+                  <div class="org-selection-clear">
+                            <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                              <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                            </svg>
+                  </div>
+                </div>
+              </x-major>
+            </prime-seg>
+          </x-major>
+          <x-minor>
+                    <svg class="active-color user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="user-settings.html">
+                      <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                    </svg>
+          </x-minor>
+        </prime-seg>
+        <script></script>
+      </nav>
+      <div class="toast" id="saveMessage">
+        <div class="center-justify">Your configuration has been saved!</div>
+      </div>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar"><a class="super-admin-nav dark bar-link" href="support.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Admin</div>
+                        </x-major>
+                      </prime-seg></a>
+            <prime-seg class="vertical-center org-section">
+              <x-major>
+                <h4 class="sidebar-org-label" data-goto="org.html">Looney Tunes - OC</h4>
+              </x-major>
+              <x-minor>
+                        <svg class="recent-orgs-trigger trigger file-icon" width="21px" height="21px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#subOrgDropdown">
+                          <path d="M 895.99999,0 H 128.00001 C 75.200012,0 32.000012,43.2 32.000012,96 v 832 c 0,52.8 43.2,96 95.999998,96 h 767.99998 c 52.8,0 96,-43.2 96,-96 V 96 c 0,-52.8 -43.2,-96 -96,-96 z m -32,896 H 160.00001 V 128 H 863.99999 Z M 288.00001,448 H 736 v 64 H 288.00001 Z m 0,128 H 736 v 64 H 288.00001 Z m 0,128 H 736 v 64 H 288.00001 Z m 0,-384 H 736 v 64 H 288.00001 Z"></path>
+                        </svg>
+                <div class="fade" id="subOrgDropdown">
+                  <div class="wrap" style="margin-top: 45px; margin-bottom: 45px">
+                    <prime-seg>
+                      <x-major>
+                        <div class="rack">
+                                  <svg class="add-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="m 891.68001,554.68799 v -85.376 H 554.68799 V 132.32 H 469.312 V 469.31199 H 132.31999 v 85.376 H 469.312 V 891.68 h 85.37599 V 554.68799 Z"></path>
+                                  </svg>
+                          <div>Add a Member</div>
+                        </div>
+                      </x-major>
+                      <x-minor><a class="microlink right-justify" href="org.html?focus=Members">View</a></x-minor>
+                    </prime-seg>
+                  </div>
+                  <div class="wrap" style="margin-top: 5px; margin-bottom: 25px">
+                    <div class="rack">
+                              <svg class="add-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                <path d="m 891.68001,554.68799 v -85.376 H 554.68799 V 132.32 H 469.312 V 469.31199 H 132.31999 v 85.376 H 469.312 V 891.68 h 85.37599 V 554.68799 Z"></path>
+                              </svg>
+                      <div>
+                        <prime-seg>
+                          <x-major>Add a Sub-Org</x-major>
+                          <x-minor></x-minor>
+                        </prime-seg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-wrap suborg-dropdown-org-section">
+                    <prime-seg class="suborg-dropdown-title">
+                      <x-major>
+                        <h5>Sub-Orgs:</h5>
+                      </x-major>
+                      <x-minor><a class="microlink" href="org.html">View All</a></x-minor>
+                    </prime-seg>
+                    <div class="suborg-dropdown-list">
+                      <div>SubOrg A</div>
+                      <div>SubOrg B</div>
+                      <div>SubOrg C</div>
+                    </div>
+                  </div>
+                </div>
+              </x-minor>
+            </prime-seg><a class="bar-link" href="dashboard.html?title=Dashboard">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-home"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Dashboard</div>
+                        </x-major>
+                      </prime-seg></a><a class="bar-link" href="devices.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Devices</div>
+                        </x-major>
+                      </prime-seg></a><a class="bar-link" href="notifications.html">
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <div class="icon-file"></div>
+                        </x-minor>
+                        <x-major>
+                          <div>Notifications</div>
+                        </x-major>
+                      </prime-seg></a>
+          </div>
+        </x-minor>
+        <x-major>
+          <div id="content">
+            <panel-wrapper>
+              <panel-inner style="padding-top: 0.1px; padding-bottom: 90px">
+                <x-segment class="major-in-the-middle vertical-center" of="4">
+                  <x-minor>
+                    <div class="clear-wrap">
+                      <div class="rack vertical-center no-gap" data-goback>
+                        <div>
+                                  <svg class="active-color arrow-left-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="M 746.67199,213.32798 V 810.67201 L 277.328,512.01598 Z"></path>
+                                  </svg>
+                        </div>
+                        <div><span class="active-color">Back</span></div>
+                      </div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <h3 class="center-justify">New Notification Setting</h3>
+                  </x-major>
+                  <x-minor></x-minor>
+                </x-segment>
+                <x-segment of="3">
+                  <x-major>
+                    <prime-seg class="vertical-center">
+                      <x-minor>
+                        <h4><strong>Name:</strong></h4>
+                      </x-minor>
+                      <x-major>
+                        <div class="form-element editable-element">
+                          <div class="editable-add-action">
+                                    <svg class="editable-add-icon active-color add-bubble-icon" width="33px" height="33px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                      <path d="M 512,0 C 229.40828,0 0,229.40828 0,512 c 0,282.5917 229.40828,512 512,512 282.5917,0 512,-229.4083 512,-512 C 1024,229.40828 794.5917,0 512,0 Z m 0,92 C 743.80775,92 932,280.19223 932,512 932,743.80775 743.80775,932 512,932 280.19223,932 92,743.80775 92,512 92,280.19223 280.19223,92 512,92 Z m -36.375,142.0625 v 241.5 h -241.5 v 72.875 h 241.5 V 790 H 548.5 V 548.4375 H 790 v -72.875 H 548.5 v -241.5 z"></path>
+                                    </svg>
+                          </div>
+                          <prime-seg class="non-field-items vertical-center">
+                            <x-minor>
+                              <div class="editable-text" data-ref="notificationsName" style="font-size: 26px">Untitled</div>
+                            </x-minor>
+                            <x-major>
+                                      <svg class="editable-edit-action active-color edit-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                        <path d="m 864,0 c 88.352,0 160,71.647997 160,160 0,36.032 -11.904,69.248 -32,96 L 928,320 704,95.999997 768,32 C 794.752,11.904 827.968,0 864,0 Z M 63.99996,736.00003 -4e-5,1024 l 288,-63.99996 L 880,368 655.99999,144 Z M 715.584,363.584 267.58396,811.58403 212.41596,756.41603 660.41599,308.416 Z"></path>
+                                      </svg>
+                            </x-major>
+                          </prime-seg>
+                          <prime-seg class="vertical-center editable-field">
+                            <x-major>
+                              <input class="store editable-input" type="text" value="Untitled" style="font-size: 26px" id="notificationsName"/>
+                            </x-major>
+                            <x-minor>
+                              <div class="rack vertical-center">
+                                <div class="editable-done-action close-in active-color"><strong>Done</strong></div>
+                                        <svg class="editable-close-icon editable-close-action close-bubble-solid-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                          <path d="m 512,0 c 282.592,0 512,229.408 512,512 0,282.592 -229.408,512 -512,512 C 229.408,1024 0,794.592 0,512 0,229.408 229.408,0 512,0 Z m 170.784,734.304 51.52,-51.52 L 563.52,512 734.304,341.216 682.784,289.696 512,460.48 341.216,289.696 289.696,341.216 460.48,512 289.696,682.784 341.216,734.304 512,563.52 Z"></path>
+                                        </svg>
+                              </div>
+                            </x-minor>
+                          </prime-seg>
+                        </div>
+                      </x-major>
+                    </prime-seg>
+                  </x-major>
+                  <x-minor></x-minor>
+                </x-segment>
+                <div class="wrap">
+                  <div class="heading-wrap dark">
+                    <div class="card-inner"> 
+                      <h4>Configuration</h4>
+                    </div>
+                  </div>
+                  <div class="card-inner card-top-bottom">
+                    <x-segment class="stretch yep" of="7">
+                      <x-major class="stretch yep">
+                        <div class="stretch column yep notifications-to-wrapper">
+                          <div class="clear-wrap" style="margin-top: 25px; margin-bottom: 10px">
+                            <h4>Send Notifications To:</h4>
+                          </div>
+                          <div class="wrap stretch flex-grow flex-start">
+                            <div class="clear-wrap yep" style="margin-top: 5px; margin-bottom: 5px">
+                              <prime-seg class="vertical-center no-gap yep">
+                                <x-minor class="pill-minor">
+                                  <div class="is-object"></div>
+                                  <div class="checkbox-widget">
+                                    <div class="form-element"><span class="checkbox">
+                                        <input type="checkbox" name="" value="" id="d3j3o" data-checked="true"/>
+                                        <label for="d3j3o"></label></span>
+                                    </div>
+                                  </div>
+                                </x-minor>
+                                <x-major class="pill-major">
+                                  <div class="rack vertical-center">
+                                    <div>
+                                      <h5>Email: </h5>
+                                    </div>
+                                    <div>bobross@megacorp.com</div><span class="pseudo-sub">anotherEmail@megacorp.comoneMoreEmail@mega ...</span>
+                                  </div>
+                                  <x-minor></x-minor>
+                                </x-major>
+                              </prime-seg>
+                            </div>
+                          </div>
+                        </div>
+                      </x-major>
+                      <x-minor class="stretch yep">
+                        <div class="notifications-for-wrapper yep">
+                          <div class="clear-wrap">
+                            <h4>Notify Me About: </h4>
+                          </div>
+                          <div class="wrap notify-me-balance"><a class="select-all2" id="notifyAboutSelectAll">Select All</a>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="is-object"></div>
+                                <div class="checkbox-widget">
+                                  <div class="form-element"><span class="checkbox">
+                                      <input class="type-notify-about" type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="891x4" data-checked="true"/>
+                                      <label for="891x4">Disconnects/Reconnects</label></span>
+                                  </div>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                        <svg class="info-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                          <path d="m 506.112,102.40003 c -226.15039,0 -409.599984,183.44959 -409.599984,409.59999 0,226.15038 183.449594,409.59996 409.599984,409.59996 226.15039,0 409.59998,-183.44958 409.59998,-409.59996 0,-226.1504 -183.44959,-409.59999 -409.59998,-409.59999 z m 0,86.6304 c 178.30399,0 322.96958,144.63999 322.96958,322.96959 0,178.32958 -144.63999,322.96956 -322.96958,322.96956 -178.30399,0 -322.96959,-144.63998 -322.96959,-322.96956 0,-178.3296 144.64,-322.96959 322.96959,-322.96959 z M 454.40001,730.1632 c 0,-92.05759 0,-184.14079 0,-276.19838 34.6112,0 69.22239,0 103.83359,0 0,92.05759 0,184.14079 0,276.19838 -34.6112,0 -69.22239,0 -103.83359,0 z m -8.2432,-390.52797 c 0,-32.33281 27.62239,-57.13921 59.95519,-57.13921 32.3328,0 59.9552,24.8064 59.9552,57.13921 0,32.33279 -27.6224,57.13919 -59.9552,57.13919 -32.3328,0 -59.95519,-24.8064 -59.95519,-57.13919 z"></path>
+                                        </svg>
+                              </x-major>
+                            </prime-seg>
+                            <div class="is-object"></div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input class="type-notify-about trigger" type="checkbox" name="Check-Ins" value="check-ins" id="qq6o2" data-checked="true" data-target="#checkInThreshold"/>
+                                  <label for="qq6o2">Check-Ins</label></span>
+                              </div>
+                            </div>
+                            <div class="drawer activated" id="checkInThreshold">
+                              <h6>Notify After: </h6>
+                              <p class="pseudo-sub">Send alert if a device hasn't checked in for over:</p>
+                              <prime-seg>
+                                <x-minor>
+                                  <div class="rack vertical-center">
+                                    <select class="notify-time-box">
+                                      <option value="">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                      <option value="11">11</option>
+                                      <option value="12">12</option>
+                                    </select>
+                                    <div>
+                                      <h6>hour</h6>
+                                    </div>
+                                  </div>
+                                </x-minor>
+                                <x-major>
+                                  <div class="rack vertical-center">
+                                    <select class="notify-time-box">
+                                      <option value="">00</option>
+                                      <option value="15">15</option>
+                                      <option value="30">30</option>
+                                      <option value="45">45</option>
+                                    </select>
+                                    <div>
+                                      <h6>minutes</h6>
+                                    </div>
+                                  </div>
+                                </x-major>
+                              </prime-seg>
+                            </div>
+                            <div class="is-object"></div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input class="type-notify-about" type="checkbox" name="WAN-Failovers" value="wan-failovers" id="5rbhbj" data-checked="true"/>
+                                  <label for="5rbhbj">WAN-Failovers</label></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </x-minor>
+                    </x-segment>
+                    <div class="clear-wrap" style="margin-top: 45px; margin-bottom: 25px">
+                      <x-segment of="5">
+                        <x-major> 
+                          <div class="notifications-to-wrapper">
+                            <h4>Include Notifications From: </h4>
+                            <div class="check-all-orgs">
+                              <div class="clear-wrap" style="margin-top: 0px; margin-bottom: 0px">
+                                <div class="is-object"></div>
+                                <div class="checkbox-widget">
+                                  <div class="form-element"><span class="checkbox">
+                                      <input type="checkbox" name="All Orgs" value="all-orgs" id="allOrgs" data-checked="true"/>
+                                      <label for="allOrgs">All Orgs</label></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clear-wrap"> 
+                              <div class="wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="is-object"></div>
+                                    <div class="rack compress">
+                                      <div class="checkbox-widget">
+                                        <div class="form-element"><span class="checkbox">
+                                            <input class="type-org type-org-family" type="checkbox" value="veridian-dynamics" id="firstOrg" data-checked="true"/>
+                                            <label for="firstOrg">Veridian Dynamics</label></span></div>
+                                      </div>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                            <svg class="trigger arrow-down-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#firstOrgDrawer">
+                                              <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                                            </svg>
+                                  </x-major>
+                                </prime-seg>
+                                <div class="drawer" id="firstOrgDrawer"><a class="select-all" id="firstOrgSelectAll">Select All</a>
+                                  <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 25px">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input class="type-suborg1" type="checkbox" name="Jabberwocky Project" value="jabberwocky-project" id="suborg1"/>
+                                          <label for="suborg1">Jabberwocky Project</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clear-wrap suborg">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input class="type-suborg1" type="checkbox" name="Green Initiative" value="green-initiative" id="suborg2"/>
+                                          <label for="suborg2">Green Initiative</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clear-wrap suborg">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input class="type-suborg1" type="checkbox" name="Assistant Program" value="assistant-program" id="suborg3"/>
+                                          <label for="suborg3">Assistant Program</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input class="type-org type-org-family" type="checkbox" name="Looney Tunes-OC" value="looney-tunes-oc" id="secondOrg" data-checked="true"/>
+                                          <label for="secondOrg">Looney Tunes-OC</label></span>
+                                      </div>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                            <svg class="trigger arrow-down-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#secondOrgDrawer">
+                                              <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                                            </svg>
+                                  </x-major>
+                                </prime-seg>
+                                <div class="drawer" id="secondOrgDrawer">
+                                  <div class="clear-wrap suborg">
+                                    <div class="is-object"></div>
+                                    <div class="checkbox-widget">
+                                      <div class="form-element"><span class="checkbox">
+                                          <input class="type-suborg2" type="checkbox" name="The Jade Group" value="the-jade-group" id="suborg4"/>
+                                          <label for="suborg4">The Jade Group</label></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </x-major>
+                        <x-minor></x-minor>
+                      </x-segment>
+                    </div>
+                  </div>
+                </div>
+              </panel-inner>
+            </panel-wrapper>
+          </div>
+        </x-major>
+      </prime-seg>
+      <div class="footer-you-so-sticky obscure activated" id="footer">
+        <panel-wrapper class="light">
+          <panel-inner style="padding-top: 5px; padding-bottom: 5px">
+            <div class="rack right vertical-center with-dividers">
+              <div><a class="trigger" data-target="#footer">Cancel</a></div>
+              <div>
+                <div class="form-element">
+                  <input class="trigger" type="submit" value="Save" id="saveWifiSettings" data-target="#saveMessage, #footer"/>
+                </div>
+              </div>
+            </div>
+          </panel-inner>
+        </panel-wrapper>
+      </div>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  _$('[data-checked="true"]').attr('checked', 'checked');
+  
+  //- _$('[type="checkbox"]').vanilla.addEventListener('change', (e) => {
+  //- 	if (_$(e.target).vanilla.checked) {
+  //- 		e.target.removeAttribute('checked');
+  //- 	}
+  //- 	else {
+  //- 		e.target.attr('checked', 'checked');
+  //- 	}
+  //- });
+  
+  _$('#allOrgs').vanilla.addEventListener('change', (e) => {
+      if (_$(e.target).vanilla.checked) {
+          _$('.type-org-family').attr('checked', 'checked');
+          
+      }
+      else if (!_$(e.target).vanilla.checked) {
+          _$('.type-org-family').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+  });
+  
+  _$('#firstOrgSelectAll').click((e) => {
+      if (_$(e.target).hasClass('all')) {
+          _$(e.target).removeClass('all').vanilla.innerHTML = 'Select All';
+          _$('.type-suborg1').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+      else if (!_$(e.target).hasClass('all')) {
+          _$(e.target).addClass('all').vanilla.innerHTML = 'Deselect All';
+          _$('.type-suborg1').attr('checked', 'checked');
+      }
+  });
+  
+  _$('#notifyAboutSelectAll').click((e) => {
+      if (_$(e.target).hasClass('all')) {
+          _$(e.target).removeClass('all').vanilla.innerHTML = 'Select All';
+          _$('.type-notify-about').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+      else if (!_$(e.target).hasClass('all')) {
+          _$(e.target).addClass('all').vanilla.innerHTML = 'Deselect All';
+          _$('.type-notify-about').attr('checked', 'checked');
+      }
+  });
+  
+  _$('.type-suborg1').items.forEach((_item_) => {
+      _item_.addEventListener('change', (e) => {
+          if (_$('.type-suborg1:checked').items.length == _$('.type-suborg1').items.length) {
+              _$('#firstOrgSelectAll').vanilla.innerHTML = 'Deselect All';
+          }
+          else {
+              _$('#firstOrgSelectAll').vanilla.innerHTML = 'Select All';
+          }
+      });
+  });
+  
+  _$('#addEmailBtn').click(() => {
+      _$('').vanilla.addEventListener('click', () => {
+          const last = _$('#additionalEmails').items.length - 1;
+          const container = _$('').items[last];
+          container.innerHTML = addEmail.value;
+          
+      });
+  });
+  
+  //- _$('#secondOrg').vanilla.addEventListener('change', (e) => {
+  //- 	_$('.type-suborg2').attr('checked', 'checked');
+  //- 	_$('.type-suborg2').attr('data-checked', 'true');
+  //- });
+  
+  
+  
+  //- _$('.type-org-family').items.forEach((_item_) => {
+  //- 	_item_.addEventListener('change', (e) => {
+  //- 		if (!_$('.footer-you-so-sticky').hasClass('activated')) {
+  //- 			_$('.footer-you-so-sticky').addClass('activate-in');
+  //- 			setTimeout(() => {
+  //- 				_$('.footer-you-so-sticky').addClass('activated');
+  //- 				_$('.footer-you-so-sticky').removeClass('activate-in');
+  //- 			}, 200);
+  //- 		}
+  
+  //- 		const totalCount = _$('.type-org-family').items.length;
+  //- 		const totalChecked = _$('.type-org-family[data-checked="true"]').items.length;
+          
+  //- 		if (totalChecked == totalCount) {
+  //- 			_$('#allOrgs').attr('checked', 'checked');
+  //- 			_$('#allOrgs').attr('data-checked', 'true');
+  //- 		}
+  //- 		else if (totalChecked < totalCount) {
+  //- 			_$('#allOrgs').vanilla.removeAttribute('checked');
+  //- 			_$('#allOrgs').attr('data-checked', 'false');
+  //- 		}
+  //- 	});
+  
+  //- });
+  
+  
+  //- _$('.type-suborg1').items.forEach((_item_) => {
+  //- 	_item_.addEventListener('change', (e) => {
+  //- 		console.log("checking!", '.type-suborg1');
+  //- 		const totalCount = _$('.type-suborg1').items.length;
+  //- 		const totalChecked = _$('.type-suborg1:checked').items.length;
+  //- 		console.log(totalCount);
+  //- 		console.log(totalChecked);
+  //- 		if (totalChecked == totalCount) {
+  //- 			_$('#firstOrg').attr('checked', 'checked');
+  //- 			_$('#firstOrg').attr('data-checked', 'true');
+  //- 		}
+  //- 		else if (totalChecked < totalCount) {
+  //- 			_$('#firstOrg').vanilla.removeAttribute('checked');
+  //- 			_$('#firstOrg').attr('data-checked', 'false');
+  //- 		}
+  //- 	});
+  
+  //- });
+  
+  //- _$('.type-suborg2').items.forEach((_item_) => {
+  //- 	_item_.addEventListener('change', (e) => {
+  //- 		const totalCount = _$('.type-suborg2').items.length;
+  //- 		const totalChecked = _$('.type-suborg2:checked').items.length;
+  //- 		console.log(totalCount);
+  //- 		console.log(totalChecked);
+  //- 		if (totalChecked == totalCount) {
+  //- 			_$('#secondOrg').attr('checked', 'checked');
+  //- 			_$('#secondOrg').attr('data-checked', 'true');
+  //- 		}
+  //- 		else if (totalChecked < totalCount) {
+  //- 			_$('#secondOrg').vanilla.removeAttribute('checked');
+  //- 			_$('#secondOrg').attr('data-checked', 'false');
+  //- 		}
+  //- 	});
+  
+  //- });
+  
+  
+  //- _$('input[type="checkbox"].type-org-family').items.forEach((_item_) => {
+  //- 	if (_item_.id !== 'allOrgs') {
+  //- 		_item_.addEventListener('change', (e) => {
+  //- 			console.log(_$('.type-org:checked, .type-suborg1:checked, .type-suborg2:checked').items.length);
+  //- 			console.log(_$('.type-org, .type-suborg1, .type-suborg2').items.length);
+  //- 			if (_$('.type-org, .type-suborg1, .type-suborg2').items.length === _$('.type-org:checked, .type-suborg1:checked, .type-suborg2:checked').items.length) {
+  //- 				_$('#allOrgs').attr('checked', 'checked');
+  //- 				_$('#allOrgs').attr('data-checked', 'true');
+  //- 			}
+  //- 			else {
+  //- 				_$('#allOrgs').vanilla.removeAttribute('checked');
+  //- 				_$('#allOrgs').attr('data-checked', 'false');
+  //- 			}
+  //- 		});
+  //- 	}
+  //- });
+</script>

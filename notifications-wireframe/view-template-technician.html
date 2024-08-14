@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <prime-seg class="vertical-align">
+          <x-major>
+            <ul>
+              <li>
+                            <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+              </li>
+            </ul>
+          </x-major>
+          <x-minor>
+            <div class="rack vertical-align">
+              <div class="header-pill">
+                <prime-seg>
+                  <x-major class="lt-grey">Cmd + D</x-major>
+                  <x-minor> 
+                    <prime-seg>
+                      <x-minor>
+                        <div class="icon-search"></div>
+                      </x-minor>
+                      <x-major>Devices</x-major>
+                    </prime-seg>
+                  </x-minor>
+                </prime-seg>
+              </div><a>Sign Out</a>
+              <div>
+                <div style="width: 38px; height: 38px">
+                  <div class="profile image-widget">
+                    <div class="image-border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </x-minor>
+        </prime-seg>
+      </nav>
+      <div class="modal window" id="confirmModal">
+        <h4>Verify</h4>
+        <div class="clear-wrap">
+          <h5>You are about to change setting for the following devices. Are you sure?</h5>
+        </div>
+        <div class="clear-wrap">
+          <table> 
+            <thead> 
+              <tr>
+                <th>Device ID </th>
+                <th>S/N</th>
+              </tr>
+            </thead>
+            <tbody>
+                          <tr>
+                            <td><span class="blockletter">Curabitur bibendum </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Donec odio </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Nullam sapien </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Mauris elementum </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Praesent id </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Fusce tellus </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Etiam egestas </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Nullam at </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Quisque porta </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+                          <tr>
+                            <td><span class="blockletter">Nulla pulvinar </span>
+                            </td>
+                            <td class="blockletter">000000000000000000000000</td>
+                          </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="clear-wrap"> 
+          <div class="rack with-dividers right vertical-center"><a class="close-modal">Cancel</a>
+                        <div class="button-module"><a class="close-modal button" href="">Yes</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal window" id="maclistModal">
+        <h4>Add MAC Address</h4>
+        <div class="clear-wrap new-mac-address" style="margin-top: 25px; margin-bottom: 15px">
+          <prime-seg class="vertical-center">
+            <x-major>
+              <div class="form-element">
+                <input type="text"/>
+                <label>New MAC Address</label>
+              </div>
+            </x-major>
+            <x-minor>
+              <div class="form-element">
+                <input class="add mac-address-add close-modal" type="submit" value="Add" data-target="#MACAddWindow"/>
+              </div>
+            </x-minor>
+          </prime-seg>
+        </div>
+      </div>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar">
+            <prime-seg class="vertical-center org-section">
+              <x-major>
+                <h4 class="sidebar-org-label">Looney Tunes - OC</h4>
+              </x-major>
+            </prime-seg><a class="bar-link" href="dashboard-technician.html?title=Dashboard">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-home"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Dashboard</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="devices-technician.html">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Devices</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Groups">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Groups</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Notifications">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Notifications</div>
+                            </x-major>
+                          </prime-seg></a>
+          </div>
+        </x-minor>
+        <x-major>
+          <div class="with-footer" id="content">
+            <panel-wrapper class="light header-panel">
+              <panel-inner style="padding-top: undefinedpx; padding-bottom: undefinedpx">
+                <div class="rack compress">
+                  <div>
+                    <h4>Looney Toons - OC</h4>
+                  </div>
+                  <div>
+                                <div class="button-module"><a class="button" href="">Clear</a></div>
+                  </div>
+                </div>
+              </panel-inner>
+            </panel-wrapper>
+            <panel-wrapper>
+              <panel-inner style="padding-top: 0.1px; padding-bottom: 0.1px">
+                <x-segment class="major-in-the-middle vertical-center" of="3">
+                  <x-cell>
+                    <div class="clear-wrap">
+                      <div class="rack vertical-center no-gap" data-goback>
+                        <div>
+                          <svg class="active-color arrow-left-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <path d="M 746.67199,213.32798 V 810.67201 L 277.328,512.01598 Z"></path>
+                          </svg>
+                        </div>
+                        <div><span class="active-color">Back</span></div>
+                      </div>
+                    </div>
+                  </x-cell>
+                  <x-cell>
+                    <h3 id="templateName"></h3>
+                  </x-cell>
+                  <x-major></x-major>
+                </x-segment>
+                <div class="wrap">
+                  <div class="heading-wrap dark"> 
+                    <div class="card-inner">
+                      <h4>WiFi Settings</h4>
+                    </div>
+                  </div>
+                  <div class="card-inner card-top-bottom"> 
+                    <x-segment class="thirds"> 
+                      <x-minor>
+                        <div class="clear-wrap">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="details-label">
+                                <h5 class="label">SSID</h5>
+                              </div>
+                            </x-minor>
+                            <x-major>
+                              <prime-seg class="value-with-status">
+                                <x-major>
+                                  <div class="blockletter">0000000000000000</div>
+                                </x-major>
+                                <x-minor>
+                                  <svg class="svg-indicator pending status-on-read status-combined half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                  </svg>
+                                </x-minor>
+                              </prime-seg>
+                            </x-major>
+                          </prime-seg>
+                        </div>
+                        <div class="clear-wrap">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="details-label">
+                                <h5 class="label">WiFi</h5>
+                              </div>
+                            </x-minor>
+                            <x-major>
+                              <prime-seg class="value-with-status">
+                                <x-major>
+                                  <div data-ref="wifiEnabled" data-fallback="Off"></div>
+                                </x-major>
+                                <x-minor></x-minor>
+                              </prime-seg>
+                            </x-major>
+                          </prime-seg>
+                        </div>
+                        <div class="clear-wrap">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="details-label">
+                                <h5 class="label">Broadcasting</h5>
+                              </div>
+                            </x-minor>
+                            <x-major>
+                              <prime-seg class="value-with-status">
+                                <x-major>
+                                  <div data-ref="broadcastWifi" data-fallback="No"></div>
+                                </x-major>
+                                <x-minor></x-minor>
+                              </prime-seg>
+                            </x-major>
+                          </prime-seg>
+                        </div>
+                        <div class="clear-wrap">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="details-label">
+                                <h5 class="label">Encryption</h5>
+                              </div>
+                            </x-minor>
+                            <x-major>
+                              <prime-seg class="value-with-status">
+                                <x-major>
+                                  <div data-ref="encryptionSelection" data-default="WPA2-PSK"></div>
+                                </x-major>
+                                <x-minor>
+                                  <svg class="svg-indicator pending status-on-read half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                  </svg>
+                                </x-minor>
+                              </prime-seg>
+                            </x-major>
+                          </prime-seg>
+                        </div>
+                      </x-minor>
+                      <x-major class="maclist-items-combined" id="macListReadOnly">
+                        <prime-seg>
+                          <x-major>
+                            <h5 class="label">
+                               MAC List:&nbsp;<span id="maclistQualifier" data-ref="allowDenySelect">Allow</span></h5>
+                          </x-major>
+                          <x-minor>
+                            <svg class="svg-indicator pending status-on-read half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                              <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                            </svg>
+                          </x-minor>
+                        </prime-seg>
+                        <x-segment of="2">
+                          <x-cell>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                          </x-cell>
+                          <x-cell>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                        <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                          </x-cell>
+                        </x-segment>
+                      </x-major>
+                    </x-segment>
+                  </div>
+                </div>
+              </panel-inner>
+            </panel-wrapper>
+          </div>
+        </x-major>
+      </prime-seg>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  const editableVal = params.title.replace('_', ' ');
+  _$('#templateName').vanilla.innerHTML = editableVal;
+</script>

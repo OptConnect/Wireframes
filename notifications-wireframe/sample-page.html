@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="use-native-click" id="drawer">
+      <nav class="menu-drawer">
+        <div>
+          <div class="fade" id="searchOverlay">
+            <div id="bigSearchInput">Search</div>
+          </div>
+          <prime-seg class="vertical-center" id="mainNavStuff">
+            <x-minor>
+              <ul>
+                <li>
+                  <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+                </li>
+              </ul>
+            </x-minor>
+            <x-major class="org-selection">
+              <div class="rack vertical-center">
+                <h5 class="active-color">Looney Tunes - OC</h5>
+                <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                  <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                </svg>
+                <div class="org-selection-clear">
+                  <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                  </svg>
+                </div>
+              </div>
+            </x-major>
+          </prime-seg>
+          <div class="radiant-menu-element" id="radiantMenu">
+            <div class="radiant-mask"></div>
+            <div class="radiant-mask2"></div>
+            <div class="radiant-backdrop radiant-menu-element fade"></div>
+            <div id="radiantIcon">
+              <svg class="trigger radiant-menu-icon" width="38px" height="38px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target=".radiant-menu-element">
+                <path d="M 8.862946,416.49573 C 47.790768,210.46065 210.46066,47.891615 416.49574,8.8629439 V 110.31732 C 265.32267,146.21966 146.21967,265.32266 110.31732,416.49573 Z M 607.50427,8.8629439 C 813.53935,47.891615 976.10839,210.46065 1015.1371,416.49573 H 913.68269 C 877.78034,265.32266 758.67734,146.21966 607.50427,110.31732 Z M 1015.1371,607.50427 C 976.10839,813.53935 813.53935,976.10839 607.50427,1015.1371 V 913.68268 C 758.67734,877.78034 877.78034,758.67734 913.68269,607.50427 Z M 416.49574,1015.1371 C 210.46066,976.10839 47.790768,813.53935 8.862946,607.50427 H 110.31732 c 35.90235,151.17307 155.00535,270.27607 306.17842,306.17841 z M 512,160.03601 C 706.23572,160.03601 863.96399,317.76429 863.96399,512 863.96399,706.23572 706.23572,863.96399 512,863.96399 317.76429,863.96399 160.03602,706.23572 160.03602,512 160.03602,317.76429 317.76429,160.03601 512,160.03601 Z m 0,162.16565 C 407.2176,322.20166 322.20166,407.2176 322.20166,512 322.20166,616.7824 407.2176,701.79835 512,701.79835 616.78241,701.79835 701.79835,616.7824 701.79835,512 701.79835,407.2176 616.78241,322.20166 512,322.20166 Z"></path>
+              </svg>
+            </div>
+            <div class="radiant-menu-element fade" id="gimme">
+              <div class="trigger" id="searchElem" data-target="#searchOverlay">
+                <div class="rack vertical-center">
+                  <div>Search</div>
+                  <svg class="search-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="m 672.24,608.22399 h -33.92 l -11.744,-11.744 c 41.82399,-48.416 66.976,-111.36 66.976,-180.256 0,-153.184 -124.16001,-277.344 -277.34401,-277.344 -153.18399,0 -277.344,124.16 -277.344,277.344 0,153.184 124.16001,277.344 277.344,277.344 68.896,0 131.84001,-25.184 180.256,-66.784 l 11.744,11.744 v 33.696 L 821.552,885.12 885.13601,821.536 672.24,608.192 Z m -256,0 c -106.01601,0 -192,-85.984 -192,-192 0,-106.016 85.98399,-192 192,-192 106.01599,0 192,85.984 192,192 0,106.016 -85.98401,192 -192,192 z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="radiant-menu-element fade" id="logger">
+              <div class="rack vertical-center">
+                <div>Log Out</div>
+                <svg class="user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                  <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="radiant-menu-element fade" id="Me">
+              <div class="rack vertical-center">
+                <div>Me</div>
+                <svg class="user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                  <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="dotter"></div>
+          </div>
+          <script></script>
+          <div class="clear-wrap menu-drawer-search-cleanup">
+            <div class="search-widget" data-target="search-results.html">
+              <div class="searchfield">
+                <div class="icon-search"></div>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <div class="fade" id="searchOverlay">
+          <div id="bigSearchInput">Search</div>
+        </div>
+        <prime-seg class="vertical-center" id="mainNavStuff">
+          <x-minor>
+            <ul>
+              <li>
+                        <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+              </li>
+            </ul>
+          </x-minor>
+          <x-major class="org-selection">
+            <div class="rack vertical-center">
+              <h5 class="active-color">Looney Tunes - OC</h5>
+                      <svg class="arrow-down-icon" width="20px" height="20px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                      </svg>
+              <div class="org-selection-clear">
+                        <svg class="close-bubble-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                          <path d="M 511.99999,-3.4999999e-6 C 229.40827,-3.4999999e-6 -10e-6,229.40827 -10e-6,511.99999 -10e-6,794.5917 229.40827,1024 511.99999,1024 794.59171,1024 1024,794.5917 1024,511.99999 1024,229.40827 794.59171,-3.5e-6 511.99999,-3.4999999e-6 Z m 0,91.9999994999999 c 231.80772,0 420.00002,188.192224 420.00002,419.999994 C 932.00001,743.80777 743.80771,932 511.99999,932 c -231.80777,0 -420,-188.19223 -420,-420.00001 0,-231.80777 188.19223,-419.999994 420,-419.999994 z M 341.25,289.68749 l -51.56251,51.49999 170.8125,170.81251 -170.8125,170.81251 51.56251,51.5 170.74999,-170.81251 170.81252,170.81251 51.5,-51.5 -170.75001,-170.81251 170.75001,-170.81251 -51.5,-51.49999 -170.81252,170.8125 z"></path>
+                        </svg>
+              </div>
+            </div>
+          </x-major>
+        </prime-seg>
+        <div class="radiant-menu-element" id="radiantMenu">
+          <div class="radiant-mask"></div>
+          <div class="radiant-mask2"></div>
+          <div class="radiant-backdrop radiant-menu-element fade"></div>
+          <div id="radiantIcon">
+                    <svg class="trigger radiant-menu-icon" width="38px" height="38px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target=".radiant-menu-element">
+                      <path d="M 8.862946,416.49573 C 47.790768,210.46065 210.46066,47.891615 416.49574,8.8629439 V 110.31732 C 265.32267,146.21966 146.21967,265.32266 110.31732,416.49573 Z M 607.50427,8.8629439 C 813.53935,47.891615 976.10839,210.46065 1015.1371,416.49573 H 913.68269 C 877.78034,265.32266 758.67734,146.21966 607.50427,110.31732 Z M 1015.1371,607.50427 C 976.10839,813.53935 813.53935,976.10839 607.50427,1015.1371 V 913.68268 C 758.67734,877.78034 877.78034,758.67734 913.68269,607.50427 Z M 416.49574,1015.1371 C 210.46066,976.10839 47.790768,813.53935 8.862946,607.50427 H 110.31732 c 35.90235,151.17307 155.00535,270.27607 306.17842,306.17841 z M 512,160.03601 C 706.23572,160.03601 863.96399,317.76429 863.96399,512 863.96399,706.23572 706.23572,863.96399 512,863.96399 317.76429,863.96399 160.03602,706.23572 160.03602,512 160.03602,317.76429 317.76429,160.03601 512,160.03601 Z m 0,162.16565 C 407.2176,322.20166 322.20166,407.2176 322.20166,512 322.20166,616.7824 407.2176,701.79835 512,701.79835 616.78241,701.79835 701.79835,616.7824 701.79835,512 701.79835,407.2176 616.78241,322.20166 512,322.20166 Z"></path>
+                    </svg>
+          </div>
+          <div class="radiant-menu-element fade" id="gimme">
+            <div class="trigger" id="searchElem" data-target="#searchOverlay">
+              <div class="rack vertical-center">
+                <div>Search</div>
+                        <svg class="search-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                          <path d="m 672.24,608.22399 h -33.92 l -11.744,-11.744 c 41.82399,-48.416 66.976,-111.36 66.976,-180.256 0,-153.184 -124.16001,-277.344 -277.34401,-277.344 -153.18399,0 -277.344,124.16 -277.344,277.344 0,153.184 124.16001,277.344 277.344,277.344 68.896,0 131.84001,-25.184 180.256,-66.784 l 11.744,11.744 v 33.696 L 821.552,885.12 885.13601,821.536 672.24,608.192 Z m -256,0 c -106.01601,0 -192,-85.984 -192,-192 0,-106.016 85.98399,-192 192,-192 106.01599,0 192,85.984 192,192 0,106.016 -85.98401,192 -192,192 z"></path>
+                        </svg>
+              </div>
+            </div>
+          </div>
+          <div class="radiant-menu-element fade" id="logger">
+            <div class="rack vertical-center">
+              <div>Log Out</div>
+                      <svg class="user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                      </svg>
+            </div>
+          </div>
+          <div class="radiant-menu-element fade" id="Me">
+            <div class="rack vertical-center">
+              <div>Me</div>
+                      <svg class="user-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="m 622.84801,686.73601 c -22.11203,-3.52 -22.62403,-64.32 -22.62403,-64.32 0,0 64.96003,-64.32 79.13603,-150.816 38.08001,0 61.63191,-91.936 23.52,-124.288 1.6,-34.048 48.96001,-267.328 -190.84803,-267.328 -239.808,0 -192.448,233.28 -190.88,267.328 -38.08,32.352 -14.56,124.288 23.52,124.288 14.144,86.496 79.136,150.816 79.136,150.816 0,0 -0.512,60.8 -22.624,64.32 -71.232,11.328 -337.184,128.63998 -337.184,257.27998 h 896.00004 c 0,-128.64 -265.95201,-245.91998 -337.18406,-257.27998 z"></path>
+                      </svg>
+            </div>
+          </div>
+          <div class="dotter"></div>
+        </div>
+        <script></script>
+      </nav>
+      <panel-wrapper>
+        <panel-inner>
+          <div class="clear-wrap">
+            <x-segment of="2">
+              <x-cell>
+                <h2>Checkboxes</h2>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Just the checkbox </h5>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input type="checkbox" name="" id="2slif"/>
+                        <label for="2slif"></label></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Simple Checkbox with just the label</h5>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input type="checkbox" name="One Simple Item" value="one-simple-item" id="t31eo"/>
+                        <label for="t31eo">One Simple Item</label></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Checkbox as object with just "name" value</h5>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input type="checkbox" name="Object Checkbox" value="object-checkbox" id="5flxv"/>
+                        <label for="5flxv">Object Checkbox</label></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Checkbox as two objects with just "name" value</h5>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input type="checkbox" name="Object Checkbox #1" value="object-checkbox-#1" id="t52p5h"/>
+                        <label for="t52p5h">Object Checkbox #1</label></span>
+                    </div>
+                  </div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input type="checkbox" name="Object Checkbox #2" value="object-checkbox-#2" id="2ypnb"/>
+                        <label for="2ypnb">Object Checkbox #2</label></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Checkbox as two objects with just "name" value &mdash; horizontal</h5>
+                  <div class="is-object"></div>
+                  <div class="rack compress">
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="object-checkbox-#1" id="rl1gph"/>
+                          <label for="rl1gph">Object Checkbox #1</label></span></div>
+                    </div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="object-checkbox-#2" id="rh1fy"/>
+                          <label for="rh1fy">Object Checkbox #2</label></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Checkbox as three objects with "name" and "family" value &mdash; horizontal</h5>
+                  <div class="is-object"></div>
+                  <div class="rack compress">
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" name="example" value="object-checkbox-#1" id="5kvj8"/>
+                          <label for="5kvj8">Object Checkbox #1</label></span></div>
+                    </div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" name="example" value="object-checkbox-#2" id="uhzuof"/>
+                          <label for="uhzuof">Object Checkbox #2</label></span></div>
+                    </div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="object-checkbox-#3" id="y7b29"/>
+                          <label for="y7b29">Object Checkbox #3</label></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Checkbox as simple list &mdash; horizontal</h5>
+                  <div class="is-object"></div>
+                  <div class="rack compress">
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="item-1" id="tvlkw"/>
+                          <label for="tvlkw">Item 1</label></span></div>
+                    </div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="item-2" id="5y471"/>
+                          <label for="5y471">Item 2</label></span></div>
+                    </div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input type="checkbox" value="item-3" id="df01y"/>
+                          <label for="df01y">Item 3</label></span></div>
+                    </div>
+                  </div>
+                </div>
+              </x-cell>
+              <x-cell>
+                <h2>Switches</h2>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Just the switch, set to "on" by default</h5>
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input type="checkbox" name="daeus" value="" id="2xaxw" checked="checked"/>
+                        <label for="2xaxw"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Simple Checkbox with just the label</h5>
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input type="checkbox" name="p2gch" value="one-simple-item" id="bq4kh"/>
+                        <label for="bq4kh">One Simple Item</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Checkbox as object with just "name" value</h5>
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input type="checkbox" name="hkec4" value="object-checkbox" id="za4tw"/>
+                        <label for="za4tw">Object Checkbox</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Checkbox as two objects with just "name" value</h5>
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input type="checkbox" name="r10sdf" value="object-checkbox-#1" id="g5o17"/>
+                        <label for="g5o17">Object Checkbox #1</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input type="checkbox" name="r10sdf" value="object-checkbox-#2" id="s0s5u"/>
+                        <label for="s0s5u">Object Checkbox #2</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Checkbox as two objects with just "name" value &mdash; horizontal</h5>
+                  <div class="rack compress">
+                    <div class="form-switch-widget">
+                      <div class="form-element">
+                        <div class="switch-item">
+                          <input type="checkbox" name="zj2x9" value="object-checkbox-#1" id="cq7ah"/>
+                          <label for="cq7ah">Object Checkbox #1</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-switch-widget">
+                      <div class="form-element">
+                        <div class="switch-item">
+                          <input type="checkbox" name="zj2x9" value="object-checkbox-#2" id="51eoh"/>
+                          <label for="51eoh">Object Checkbox #2</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Checkbox as two objects with "name" and "family" value &mdash; horizontal</h5>
+                  <div class="rack compress">
+                    <div class="form-switch-widget">
+                      <div class="form-element">
+                        <div class="switch-item">
+                          <input type="checkbox" name="example" value="object-checkbox-#1" id="dkkg4"/>
+                          <label for="dkkg4">Object Checkbox #1</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-switch-widget">
+                      <div class="form-element">
+                        <div class="switch-item">
+                          <input type="checkbox" name="example" value="object-checkbox-#2" id="4ghhm"/>
+                          <label for="4ghhm">Object Checkbox #2</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </x-cell>
+            </x-segment>
+          </div>
+          <div class="clear-wrap"> 
+            <x-segment of="2">
+              <x-cell>
+                <h2>Radios</h2>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Simple Radios</h5>
+                  <div></div>
+                  <div class="radio-widget">
+                    <div class="form-element"><span class="radio">
+                        <input type="radio" name="3pm7a" value="item-a" id="v4b2g"/>
+                        <label for="v4b2g">Item A</label></span></div>
+                  </div>
+                  <div class="radio-widget">
+                    <div class="form-element"><span class="radio">
+                        <input type="radio" name="3pm7a" value="item-b" id="9hie6"/>
+                        <label for="9hie6">Item B</label></span></div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Simple Radios &mdash; horizontal</h5>
+                  <div class="rack">
+                    <div class="radio-widget">
+                      <div class="form-element"><span class="radio">
+                          <input type="radio" name="2v9tk" value="item-a" id="q5qbvl"/>
+                          <label for="q5qbvl">Item A</label></span></div>
+                    </div>
+                    <div class="radio-widget">
+                      <div class="form-element"><span class="radio">
+                          <input type="radio" name="2v9tk" value="item-b" id="etqjr"/>
+                          <label for="etqjr">Item B</label></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <h5 class="label">Simple Radios, first one selected by default &mdash; horizontal</h5>
+                  <div class="rack">
+                    <div class="radio-widget">
+                      <div class="form-element"><span class="radio">
+                          <input type="radio" name="lexne" value="item-a" id="22a9yg" checked="checked"/>
+                          <label for="22a9yg">Item A</label></span></div>
+                    </div>
+                    <div class="radio-widget">
+                      <div class="form-element"><span class="radio">
+                          <input type="radio" name="lexne" value="item-b" id="cus2xh"/>
+                          <label for="cus2xh">Item B</label></span></div>
+                    </div>
+                    <div class="radio-widget">
+                      <div class="form-element"><span class="radio">
+                          <input type="radio" name="lexne" value="item-c" id="behn5"/>
+                          <label for="behn5">Item C</label></span></div>
+                    </div>
+                  </div>
+                </div>
+              </x-cell>
+              <x-cell>
+                <h2>Buttons</h2>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Basic Button</h5>
+                          <div class="button-module"><a class="button" href="">OK</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button with just a name</h5>
+                          <div class="button-module"><a class="button" href="">Test</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button with just a name and positioned center</h5>
+                          <div class="center-justify button-module"><a class="button" href="">Test Centering</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button with just a name and positioned right</h5>
+                          <div class="right-justify button-module"><a class="button" href="">Test Right</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button using object</h5>
+                          <div class="button-module"><a class="button" href="">Object Button</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button using object and extend</h5>
+                          <div class="button-module"><a class="button extend" href="">Object Button</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button using object with url set to Wikipedia, and extend</h5>
+                          <div class="button-module"><a class="button extend" href="https://www.wikipedia.org/" target="https://www.wikipedia.org/">To Wikipedia</a></div>
+                </div>
+                <div class="clear-wrap"> 
+                  <h5 class="label">Button using object and adding class of "extend"</h5>
+                          <div class="button-module"><a class="extend button" href="">Using Class</a></div>
+                </div>
+              </x-cell>
+            </x-segment>
+            <div class="clear-wrap">
+              <h2 class="center-justify">localData</h2>
+            </div>
+            <x-segment of="2">
+              <x-cell>
+                <h4>Store</h4>
+                <div class="clear-wrap">
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input class="store" type="checkbox" name="q0eikf" value="test" id="testSwitch"/>
+                        <label for="testSwitch">Test</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="store" type="checkbox" name="Check Off" value="check-off" id="testCheckbox"/>
+                        <label for="testCheckbox">Check Off</label></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-wrap">
+                  <div class="form-element">
+                    <input class="store" type="text" id="testText"/>
+                    <label>Sample</label>
+                  </div>
+                  <div class="form-element">
+                    <input class="store" type="text" id="testText2"/>
+                    <label>Demo</label>
+                  </div>
+                </div>
+              </x-cell>
+              <x-cell>
+                <h4>Store On Save</h4>
+                <div class="wrap" id="saveOnClick">
+                  <div class="form-switch-widget">
+                    <div class="form-element">
+                      <div class="switch-item">
+                        <input class="store-on-save" type="checkbox" name="v59yn" value="test" id="saveTest"/>
+                        <label for="saveTest">Test</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="store-on-save" type="checkbox" name="Sample" value="sample" id="saveCheckbox"/>
+                        <label for="saveCheckbox">Sample</label></span>
+                    </div>
+                  </div>
+                  <div class="form-element">
+                    <input class="store-on-save" type="text" id="saveTextInput"/>
+                    <label>Demo</label>
+                  </div>
+                  <h5>Reference Text</h5>
+                  <p data-ref="saveTextInput">Demo</p>
+                  <div class="form-element">
+                    <input type="submit" value="Save"/>
+                  </div>
+                </div>
+              </x-cell>
+            </x-segment>
+          </div>
+        </panel-inner>
+      </panel-wrapper>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  emphasize('#wifiSettings');
+  
+  function prepopWhitelist() {
+      if (_$('whitelistInputUpdated').vanilla.value == null) {
+          localData[thisPage].whitelistInput = '192.168.0.1, 192.177.0.4, 192.241.0.1, 127.0.0.1, 192.246.0.2';
+          localData.save();
+          _$('#whitelistInputUpdated').vanilla.textContent = localData[thisPage].whitelistInput;
+      }
+  }
+  
+  prepopWhitelist();
+</script>

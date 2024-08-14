@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <prime-seg class="vertical-align">
+          <x-major>
+            <ul>
+              <li>
+                            <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+              </li>
+            </ul>
+          </x-major>
+          <x-minor>
+            <div class="rack vertical-align">
+              <div class="header-pill">
+                <prime-seg>
+                  <x-major class="lt-grey">Cmd + D</x-major>
+                  <x-minor> 
+                    <prime-seg>
+                      <x-minor>
+                        <div class="icon-search"></div>
+                      </x-minor>
+                      <x-major>Devices</x-major>
+                    </prime-seg>
+                  </x-minor>
+                </prime-seg>
+              </div><a>Sign Out</a>
+              <div>
+                <div style="width: 38px; height: 38px">
+                  <div class="profile image-widget">
+                    <div class="image-border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </x-minor>
+        </prime-seg>
+      </nav>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar">
+            <prime-seg class="vertical-center org-section">
+              <x-major>
+                <h4 class="sidebar-org-label">Looney Tunes - OC</h4>
+              </x-major>
+            </prime-seg><a class="bar-link" href="dashboard-technician.html?title=Dashboard">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-home"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Dashboard</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="devices-technician.html">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Devices</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Groups">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Groups</div>
+                            </x-major>
+                          </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Notifications">
+                          <prime-seg class="vertical-center">
+                            <x-minor>
+                              <div class="icon-file"></div>
+                            </x-minor>
+                            <x-major>
+                              <div>Notifications</div>
+                            </x-major>
+                          </prime-seg></a>
+          </div>
+        </x-minor>
+        <x-major>
+          <div id="content">
+            <panel-wrapper class="light header-panel">
+              <panel-inner style="padding-top: undefinedpx; padding-bottom: undefinedpx">
+                <div class="rack compress">
+                  <div>
+                    <h4>Looney Toons - OC</h4>
+                  </div>
+                </div>
+              </panel-inner>
+            </panel-wrapper>
+            <panel-wrapper>
+              <panel-inner style="padding-top: 0.1px; padding-bottom: 0.1px">
+                            <div class="tabs-widget">
+                              <ul class="tabs">
+                                <li data-target="Sub-Orgs">Sub-Orgs</li>
+                                <li data-target="Members">Members</li>
+                                <hr>
+                              </ul>
+                              <section class="tabs-wrapper">
+                                            <section class="tab-element">
+                                            </section>
+                                            <section class="tab-element">
+                                            </section>
+                              </section>
+                            </div>
+              </panel-inner>
+            </panel-wrapper>
+          </div>
+        </x-major>
+      </prime-seg>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  const tabSelect = params.focus || false;
+  console.log(tabSelect);
+  
+  if (tabSelect) {
+  	_$(`[data-target="${tabSelect}"]`).vanilla.click();
+  }
+</script>
