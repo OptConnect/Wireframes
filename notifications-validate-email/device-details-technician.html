@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <script src="js/jquishy.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <prime-seg class="vertical-align">
+          <x-major>
+            <ul>
+              <li>
+                            <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+              </li>
+            </ul>
+          </x-major>
+          <x-minor>
+            <div class="rack vertical-align">
+              <div class="header-pill">
+                <prime-seg>
+                  <x-major class="lt-grey">Cmd + D</x-major>
+                  <x-minor> 
+                    <prime-seg>
+                      <x-minor>
+                        <div class="icon-search"></div>
+                      </x-minor>
+                      <x-major>Devices</x-major>
+                    </prime-seg>
+                  </x-minor>
+                </prime-seg>
+              </div><a>Sign Out</a>
+              <div>
+                <div style="width: 38px; height: 38px">
+                  <div class="profile image-widget">
+                    <div class="image-border"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </x-minor>
+        </prime-seg>
+      </nav>
+      <div class="modal window" id="wifiModal">
+        <h4>WiFi Settings</h4>
+              <div class="clear-wrap" style="margin-top: 1px; margin-bottom: 1px">
+                <div class="border-wrap" id="unifiedSettings3">
+                  <prime-seg>
+                    <x-major>
+                            <div class="clear-wrap" style="margin-top: 10px; margin-bottom: 25px">
+                              <prime-seg class="vertical-center broadcast-elem thirds">
+                                <x-minor class="sample">
+                                        <div class="is-object"></div>
+                                        <div class="checkbox-widget">
+                                          <div class="form-element"><span class="checkbox">
+                                              <input class="wifi-store" type="checkbox" name="WiFi Enabled" value="On" id="wifiEnabled">
+                                              <label for="wifiEnabled">WiFi Enabled</label></span>
+                                          </div>
+                                        </div>
+                                        <div class="is-object"></div>
+                                        <div class="checkbox-widget">
+                                          <div class="form-element"><span class="checkbox">
+                                              <input class="wifi-store" type="checkbox" name="Broadcast" value="Yes" id="broadcastWifi">
+                                              <label for="broadcastWifi">Broadcast</label></span>
+                                          </div>
+                                        </div>
+                                </x-minor>
+                                <x-major class="wifi-and-broadcast-status"></x-major>
+                              </prime-seg>
+                            </div>
+                    </x-major>
+                    <x-minor class="status-on-read">
+                      <div class="pending rack">
+                        <prime-seg>
+                          <x-minor>
+                            <div class="trigger icon-info status-info-icon" data-target="#alertWindow"></div>
+                          </x-minor>
+                          <x-major>
+                            <div class="trigger" data-target="#alertWindow" id="showStatusCombined">Items Pending</div>
+                          </x-major>
+                        </prime-seg>
+                        <div class="icon-show show-status-icon trigger store" id="showHidePendingStatus" data-target=".status-combined" value="true"></div>
+                      </div>
+                    </x-minor>
+                  </prime-seg>
+                        <div class="clear-wrap status-wrapper" style="margin-top: 25px; margin-bottom: 1px">
+                          <prime-seg class="wifi-gutter stretch">
+                            <x-minor>
+                                    <div class="wrap ssid-box" style="margin-top: 0px; margin-bottom: 0px" id="usernamePasswordUnifiedUpdated">
+                                      <h5 class="label">SSID &amp; Password</h5>
+                                            <div class="clear-wrap" style="margin-top: 15px; margin-bottom: 10px">
+                                              <prime-seg class="vertical-center">
+                                                <x-major class="sample">
+                                                  <div class="input-wrapper">
+                                                          <div class="form-element">
+                                                            <input class="wifi-store" type="text" id="ssidInput">
+                                                            <label>SSID</label>
+                                                          </div>
+                                                  </div>
+                                                </x-major>
+                                                <x-minor> 
+                                                  <svg class="svg-indicator pending fade status-combined status-on-read half-bubble-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                                  </svg>
+                                                </x-minor>
+                                              </prime-seg>
+                                            </div>
+                                            <div class="clear-wrap" style="margin-top: 10px; margin-bottom: 5px">
+                                              <prime-seg class="vertical-center">
+                                                <x-major class="sample">
+                                                  <div class="input-wrapper">
+                                                          <div class="form-element">
+                                                            <div class="icon-show show-hide-password"></div>
+                                                            <input class="wifi-store" type="password" data-match="password" id="wifiPassword">
+                                                            <label>Password</label>
+                                                          </div>
+                                                  </div>
+                                                </x-major>
+                                                <x-minor></x-minor>
+                                              </prime-seg>
+                                              <prime-seg class="vertical-center">
+                                                <x-major class="sample confirm-password-wrapper drawer">
+                                                  <div class="input-wrapper">
+                                                          <div class="form-element">
+                                                            <div class="icon-show show-hide-password"></div>
+                                                            <input class="wifi-store" type="password" data-match="password" id="wifiPasswordConfirm">
+                                                            <label>Confirm Password</label>
+                                                          </div>
+                                                  </div>
+                                                </x-major>
+                                                <x-minor></x-minor>
+                                              </prime-seg>
+                                            </div>
+                                            <div class="clear-wrap" style="margin-top: 35px; margin-bottom: 5px">
+                                              <prime-seg class="vertical-center">
+                                                <x-major class="sample">
+                                                  <prime-seg class="vertical-center">
+                                                    <x-minor>
+                                                      <h5 class="label">Encryption</h5>
+                                                    </x-minor>
+                                                    <x-major>
+                                                            <select class="encryption-select trigger wifi-store" id="encryptionSelection" data-target=".ssid-save-action-combined" data-default="WPA2-PSK">
+                                                              <option value="">* Select</option>
+                                                              <option value="No Encryption">No Encryption</option>
+                                                              <option value="WPA-PSK">WPA-PSK</option>
+                                                              <option value="WPA2-PSK">WPA2-PSK</option>
+                                                              <option value="WPA3-SAE">WPA3-SAE</option>
+                                                              <option value="WPA2-PSK/WPA3-SAE Mixed Mode">WPA2-PSK/WPA3-SAE Mixed Mode</option>
+                                                              <option value="WPA-PSK/WPA2-PSK Mixed Mode">WPA-PSK/WPA2-PSK Mixed Mode</option>
+                                                            </select>
+                                                    </x-major>
+                                                  </prime-seg>
+                                                </x-major>
+                                                <x-minor>
+                                                  <svg class="svg-indicator pending fade status-combined status-on-read half-bubble-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                                  </svg>
+                                                </x-minor>
+                                              </prime-seg>
+                                            </div>
+                                    </div>
+                            </x-minor>
+                            <x-major class="stretch">
+                                    <div class="wrap maclist-box" style="margin-top: 0px; margin-bottom: 15px">
+                                            <div class="clear-wrap" style="margin-top: 0px; margin-bottom: 24px">
+                                              <prime-seg>
+                                                <x-major>
+                                                  <h5 class="label">MAC List</h5>
+                                                </x-major>
+                                                <x-minor>
+                                                  <svg class="svg-indicator pending fade status-combined status-on-read half-bubble-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                                  </svg>
+                                                </x-minor>
+                                              </prime-seg>
+                                            </div>
+                                            <select class="wifi-store trigger" id="allowDenySelect" data-target=".maclist-items-combined">
+                                              <option value="">Disabled</option>
+                                              <option value="Allow">Allow Listing</option>
+                                              <option value="Deny">Deny Listing</option>
+                                            </select>
+                                            <div class="clear-wrap maclist-items maclist-items-combined drawer" style="margin-top: 25px; margin-bottom: 0.1px" id="maclistItems">
+                                                    <prime-seg class="list-wrap">
+                                                      <x-major><span class="blockletter">000000000000000000000000000000000</span></x-major>
+                                                      <x-minor class="center-justify">
+                                                        <div class="icon-close active-color"></div>
+                                                      </x-minor>
+                                                    </prime-seg>
+                                            </div>
+                                      <div class="maclist-items-combined fade">
+                                              <div class="clear-wrap" style="margin-top: 12px; margin-bottom: 25px">
+                                                <prime-seg class="add-action vertical-center active-color">
+                                                  <x-minor>
+                                                    <div class="icon-add-bubble trigger" data-target="#MACAddWindow"></div>
+                                                  </x-minor>
+                                                  <x-major><span class="trigger" data-target="#MACAddWindow">Add</span></x-major>
+                                                </prime-seg>
+                                              </div>
+                                      </div>
+                                    </div>
+                            </x-major>
+                          </prime-seg>
+                        </div>
+                  <div class="ignore-display" id="saveSsidAndPassphrase">
+                    <prime-seg>
+                      <x-major></x-major>
+                      <x-minor>
+                        <div class="rack right with-dividers compress vertical-center ssid-save">
+                          <div><a class="ssid-save-action-combined ssid-cancel-save fade close-modal" data-target="#encryptionSelectionCombined" data-cancel=".wifi-store" id="ssidSaveCancelCombined">Cancel</a></div>
+                                <div class="form-element">
+                                  <input class="ssid-save-action-combined ssid-save-button disable close-modal" type="submit" value="Save" id="saveWifiSettings" data-store-on-save=".wifi-store">
+                                </div>
+                        </div>
+                      </x-minor>
+                    </prime-seg>
+                  </div>
+                  <div class="fade" id="MACAddWindow">
+                    <div class="icon-close active-color trigger" data-target="#MACAddWindow"></div>
+                    <h4>Add MAC Address</h4>
+                          <div class="clear-wrap new-mac-address" style="margin-top: 25px; margin-bottom: 15px">
+                            <prime-seg class="vertical-center">
+                              <x-major>
+                                      <div class="form-element">
+                                        <input type="text">
+                                        <label>New MAC Address</label>
+                                      </div>
+                              </x-major>
+                              <x-minor>
+                                      <div class="form-element">
+                                        <input class="add mac-address-add" type="submit" value="Add" data-target="#MACAddWindow">
+                                      </div>
+                              </x-minor>
+                            </prime-seg>
+                          </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      <div class="toast confirm-template center-justify">Your selection has been saved!</div>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar">
+            <prime-seg class="vertical-center org-section">
+              <x-major>
+                <h4 class="sidebar-org-label">Looney Tunes - OC</h4>
+              </x-major>
+            </prime-seg><a class="bar-link" href="dashboard-technician.html?title=Dashboard">
+                    <prime-seg class="vertical-center">
+                      <x-minor>
+                        <div class="icon-home"></div>
+                      </x-minor>
+                      <x-major>
+                        <div>Dashboard</div>
+                      </x-major>
+                    </prime-seg></a><a class="bar-link" href="devices-technician.html">
+                    <prime-seg class="vertical-center">
+                      <x-minor>
+                        <div class="icon-file"></div>
+                      </x-minor>
+                      <x-major>
+                        <div>Devices</div>
+                      </x-major>
+                    </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Groups">
+                    <prime-seg class="vertical-center">
+                      <x-minor>
+                        <div class="icon-file"></div>
+                      </x-minor>
+                      <x-major>
+                        <div>Groups</div>
+                      </x-major>
+                    </prime-seg></a><a class="bar-link" href="dummy-technician.html?title=Notifications">
+                    <prime-seg class="vertical-center">
+                      <x-minor>
+                        <div class="icon-file"></div>
+                      </x-minor>
+                      <x-major>
+                        <div>Notifications</div>
+                      </x-major>
+                    </prime-seg></a>
+          </div>
+        </x-minor>
+        <x-mnajor>
+          <div id="content">
+                  <panel-wrapper class="light">
+                    <panel-inner style="padding-top: undefinedpx; padding-bottom: undefinedpx">
+                      <div class="wrap">
+                        <div class="heading-wrap dark">
+                          <h4>Device Details</h4>
+                        </div>
+                        <x-segment class="thirds"> 
+                          <x-cell>
+                            <div class="clear-wrap">
+                              <h5 class="label">Device ID</h5>
+                              <div class="blockletter">498498 - N</div>
+                            </div>
+                            <div class="clear-wrap">
+                              <h5 class="label">Description</h5>
+                              <div><span class="blockletter">Nulla turpis magna cursus </span>
+                              </div>
+                            </div>
+                            <div class="clear-wrap">
+                              <h5 class="label">Model </h5>
+                              <div><span class="blockletter">Duis viverra diam non </span>
+                              </div>
+                            </div>
+                            <div class="clear-wrap">
+                              <h5 class="label">Serial Number</h5>
+                              <div><span class="blockletter">Vestibulum fermentum tortor id </span>
+                              </div>
+                            </div>
+                            <div class="clear-wrap">
+                              <h5 class="label">Network Type</h5>
+                              <div class="blockletter">ABC</div>
+                            </div>
+                            <div class="clear-wrap">
+                              <h5 class="label">Device Capabilities:</h5>
+                              <p><span class="blockletter">Pellentesque sapien suspendisse </span>
+                              </p>
+                              <p><span class="blockletter">Curabitur ligula sapien </span>
+                              </p>
+                              <p><span class="blockletter">Aliquam erat volutpat </span>
+                              </p>
+                              <p><span class="blockletter">Maecenas libero curabitur </span>
+                              </p>
+                              <p><span class="blockletter">Aliquam id dolor </span>
+                              </p>
+                            </div>
+                          </x-cell>
+                          <x-cell>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="details-label">
+                                  <h5><strong>Status</strong></h5>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p>Offline</p>
+                              </x-major>
+                            </prime-seg>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="details-label">
+                                  <h5><strong>Last Check-In</strong></h5>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <div class="blockletter">3 months ago</div>
+                              </x-major>
+                            </prime-seg>
+                            <prime-seg class="vertical-center">
+                              <x-minor>
+                                <div class="details-label">
+                                  <h5><strong>Timestamp</strong></h5>
+                                </div>
+                              </x-minor>
+                              <x-major>
+                                <p class="blockletter">03/09/2023 2:01 pm</p>
+                              </x-major>
+                            </prime-seg>
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th> </th>
+                                  <th>OptConnect IP</th>
+                                  <th>Carrier IP</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <p class="blockletter">verizon</p>
+                                  </td>
+                                  <td>
+                                    <p class="blockletter">100.77.0.8</p>
+                                  </td>
+                                  <td>
+                                    <p class="blockletter">10.145.67.115</p>
+                                  </td>
+                                  <td>
+                                    <p class="blockletter">(active)</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </x-cell>
+                          <x-cell> 
+                            <div class="clear-wrap">
+                              <h5 class="label"><strong>Groups</strong></h5>
+                              <div class="blockletter">fv c gnmxftgnjxfj</div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="clear-wrap">
+                                    <select>
+                                      <option value="">Add Device To A Group</option>
+                                      <option value="Group_1">Group 1</option>
+                                    </select>
+                            </div>
+                          </x-cell>
+                        </x-segment>
+                      </div>
+                      <div class="center-justify toast" id="alertWindow">
+                        <div>"Items Pending" are settings which have been saved, but have not yet been applied to the device</div>
+                      </div>
+                      <div class="wrap" id="wifiSettingsPanel">
+                        <div class="heading-wrap dark">
+                          <prime-seg class="vertical-center">
+                            <x-major>
+                              <h4>WiFi Settings</h4>
+                            </x-major>
+                            <x-minor>
+                              <div class="button-module"><a class="button" href="" id="editWifiBtn">Edit</a></div>
+                            </x-minor>
+                          </prime-seg>
+                        </div>
+                        <div class="clear-wrap">
+                          <x-segment class="thirds"> 
+                            <x-minor>
+                              <div class="clear-wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="details-label">
+                                      <h5 class="label">SSID</h5>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                    <prime-seg class="value-with-status">
+                                      <x-major>
+                                        <div data-ref="ssidInput" data-default=""></div>
+                                      </x-major>
+                                      <x-minor>
+                                        <svg class="svg-indicator pending status-on-read status-combined half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                          <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                        </svg>
+                                      </x-minor>
+                                    </prime-seg>
+                                  </x-major>
+                                </prime-seg>
+                              </div>
+                              <div class="clear-wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="details-label">
+                                      <h5 class="label">WiFi</h5>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                    <prime-seg class="value-with-status">
+                                      <x-major>
+                                        <div data-ref="wifiEnabled" data-fallback="Off"></div>
+                                      </x-major>
+                                      <x-minor></x-minor>
+                                    </prime-seg>
+                                  </x-major>
+                                </prime-seg>
+                              </div>
+                              <div class="clear-wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="details-label">
+                                      <h5 class="label">Broadcasting</h5>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                    <prime-seg class="value-with-status">
+                                      <x-major>
+                                        <div data-ref="broadcastWifi" data-fallback="No"></div>
+                                      </x-major>
+                                      <x-minor></x-minor>
+                                    </prime-seg>
+                                  </x-major>
+                                </prime-seg>
+                              </div>
+                              <div class="clear-wrap">
+                                <prime-seg class="vertical-center">
+                                  <x-minor>
+                                    <div class="details-label">
+                                      <h5 class="label">Encryption</h5>
+                                    </div>
+                                  </x-minor>
+                                  <x-major>
+                                    <prime-seg class="value-with-status">
+                                      <x-major>
+                                        <div data-ref="encryptionSelection" data-default="WPA2-PSK"></div>
+                                      </x-major>
+                                      <x-minor>
+                                        <svg class="svg-indicator pending status-on-read half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                          <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                        </svg>
+                                      </x-minor>
+                                    </prime-seg>
+                                  </x-major>
+                                </prime-seg>
+                              </div>
+                            </x-minor>
+                            <x-major class="maclist-items-combined fade drawer" id="macListReadOnly">
+                              <prime-seg>
+                                <x-major>
+                                  <h5 class="label">
+                                     MAC List:&nbsp;<span id="maclistQualifier" data-ref="allowDenySelect">Allow</span></h5>
+                                </x-major>
+                                <x-minor>
+                                  <svg class="svg-indicator pending status-on-read half-bubble-icon" width="16px" height="16px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                    <path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM739.569,235.84C677.697,184.783 598.404,154.099 512,154.099C314.469,154.099 154.099,314.469 154.099,512C154.099,598.404 184.783,677.697 235.84,739.569L739.569,235.84Z"></path>
+                                  </svg>
+                                </x-minor>
+                              </prime-seg>
+                              <x-segment of="2">
+                                <x-cell>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                </x-cell>
+                                <x-cell>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                  <div class="list-wrap disable"><span class="blockletter">000000000000000000000000000000000</span></div>
+                                </x-cell>
+                              </x-segment>
+                            </x-major>
+                          </x-segment>
+                        </div>
+                      </div>
+                      <script>
+                        _$('#MACAddWindow .add').click((e) => {
+                            _$('#MACAddWindow').removeClass('activated');
+                            _$('#MACAddWindow').addClass('activate-out');
+                            setTimeout(() => {
+                                _$('#MACAddWindow').removeClass('activate-out');
+                            }, 200);
+                        });
+                        
+                        _$('#maclistItems').delegate('.list-wrap .icon-close', 'click', (e) => {
+                            const elem = e.target.parentNode.parentNode;
+                            elem.remove();
+                        });
+                        
+                        _$('.mac-address-add').click((e) => {
+                            const targetWindow = _$(e.target).attr('data-target');
+                            const targetElem = '#' + _$(`${targetWindow} .mac-list-available`).vanilla.id;
+                        
+                            const newElem = `<prime-seg class="list-wrap">
+                        \t<x-major>
+                        \t\t<span class="blockletter">000000000000000000000000000000000</span>
+                        \t\t</x-major>
+                        \t<x-minor class="center-justify">
+                        \t\t<div class="icon-close active-color"></div>
+                        \t</x-minor>
+                        </prime-seg>
+                        `;
+                            _$('#maclistItems').append(newElem);
+                        
+                            _$(`${targetElem} input[type="checkbox"]`).items.forEach((_item_) => {
+                                if (!_$(_item_.closest('.wrap')).hasClass('blueprint')) {
+                                        _$(_item_).vanilla.checked = false;
+                                }
+                            });
+                        });
+                        
+                        _$('.add-new-address').click((e) => {
+                            const targetElem = _$(e.target).attr('data-target');
+                            const elem = `<div class="wrap">
+                            \t<prime-seg class="vertical-center">
+                            \t\t<x-minor>
+                            \t\t\t<div class="checkbox-widget">
+                            \t\t\t\t<div class="form-element"><span class="checkbox">
+                            \t\t\t\t\t<input type="checkbox" name="" id="c4ske">
+                            \t\t\t\t\t<label for="c4ske"></label></span>
+                            \t\t\t\t</div>
+                            \t\t\t</div>
+                            \t\t</x-minor>
+                            \t\t<x-major><span class="blockletter">000000000000000000000000000000000</span></x-major>
+                            \t</prime-seg>
+                            </div>`;
+                            _$(targetElem).prepend(elem);
+                        });
+                        
+                        _$('#wifiPassword').vanilla.addEventListener('focusin', (e) => {
+                            _$('.confirm-password-wrapper').addClass('activate-in');
+                            setTimeout(() => {
+                                _$('.confirm-password-wrapper').addClass('activated');
+                                _$('.confirm-password-wrapper').removeClass('activate-in');
+                            }, 200);
+                        });
+                        
+                        _$('#wifiPassword').vanilla.addEventListener('focusout', (e) => {
+                            if (e.target.value === localData[thisPage]['wifiPassword'] && e.target.value === localData[thisPage]['wifiPasswordConfirm'] && !_$('#wifiPasswordConfirm:focus')) {
+                                _$('.confirm-password-wrapper').removeClass('activated');
+                                _$('.confirm-password-wrapper').addClass('activate-out');
+                                setTimeout(() => {
+                                    _$('.confirm-password-wrapper').removeClass('activate-out');
+                                }, 200);
+                            }
+                        });
+                      </script>
+                    </panel-inner>
+                  </panel-wrapper>
+          </div>
+        </x-mnajor>
+      </prime-seg>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  _$('#templateSelection').vanilla.addEventListener('change', (e) => {
+      if (_$("#confirmTemplate").hasClass('activated')) {
+          _$("#confirmTemplate").addClass('activate-out');
+          _$("#confirmTemplate").removeClass('activated');
+          setTimeout(() => {
+              _$("#confirmTemplate").removeClass('activate-out');
+          }, 200);
+      }
+      else {
+          _$("#confirmTemplate").addClass('activate-in');
+          setTimeout(() => {
+              _$("#confirmTemplate").addClass('activated');
+              _$("#confirmTemplate").removeClass('activate-in');
+          }, 200);
+      }
+      wifiEditOption();
+  });
+  
+  _$('#confirmTemplate').click((e) => {
+      if (_$("#confirmTemplate").hasClass('activated')) {
+          _$("#confirmTemplate").addClass('activate-out');
+          _$("#confirmTemplate").removeClass('activated');
+          setTimeout(() => {
+              _$("#confirmTemplate").removeClass('activate-out');
+          }, 200);
+      }
+      else {
+          _$("#confirmTemplate").addClass('activate-in');
+          setTimeout(() => {
+              _$("#confirmTemplate").addClass('activated');
+              _$("#confirmTemplate").removeClass('activate-in');
+          }, 200);
+      }
+      wifiEditOption();
+  });
+  
+  function wifiEditOption() {
+      console.log(localData[thisPage]['templateSelection']);
+      if (localData[thisPage]['templateSelection']) {
+           _$('#currentlyUsing').css('display', 'block');
+           _$('#editWifiBtn').css('display', 'none');
+      }
+      else {
+          _$('#currentlyUsing').css('display', 'none');
+          _$('#editWifiBtn').css('display', 'block');
+      }
+  }
+  
+  wifiEditOption();
+</script>

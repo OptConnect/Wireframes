@@ -1,0 +1,322 @@
+
+<div class="wrap">
+  <div class="heading-wrap dark">
+    <div class="card-inner"> 
+      <h4>Configuration</h4>
+    </div>
+  </div>
+  <div class="card-inner card-top-bottom">
+    <div class="clear-wrap" style="margin-top: 0px; margin-bottom: 0px">
+      <div class="wrap">
+        <prime-seg class="vertical-center">
+          <x-major>
+            <prime-seg class="vertical-center">
+              <x-minor>
+                <prime-seg class="vertical-center">
+                  <x-minor class="primary-email-solo"> 
+                    <div class="rack vertical-center">
+                      <svg class="email-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="M 853.29599,170.65601 H 170.64 c -47.136,0 -84.895995,38.176 -84.895995,85.344 l -0.416,511.99998 c 0,47.136 38.175995,85.344 85.343995,85.344 h 682.65599 c 47.136,0 85.34401,-38.176 85.34401,-85.344 V 256.00001 c 0,-47.136 -38.176,-85.344 -85.34401,-85.344 z m 0,170.656 -341.34399,213.344 -341.344,-213.344 v -85.344 l 341.344,213.344 341.344,-213.344 z"></path>
+                      </svg>
+                      <div>bobross@megacorp.com</div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <div class="sub default-label">
+                       [ <strong>default </strong>]</div>
+                  </x-major>
+                </prime-seg>
+              </x-minor>
+              <x-major class="additional-emails-wrapper">
+                <div class="pseudo-sub">anotherEmail@megacorp.com, oneMoreEmail@megacorp.com</div>
+              </x-major>
+            </prime-seg>
+          </x-major>
+          <x-minor><a class="modal-trigger" data-target="#configModal">edit</a></x-minor>
+        </prime-seg>
+      </div>
+    </div>
+    <div class="clear-wrap" style="margin-top: 40px; margin-bottom: 25px">
+      <x-segment class="stretch yep" of="5">
+        <x-minor class="stretch yep">
+          <div class="yep">
+            <div class="clear-wrap">
+              <h4>Notify Me About: </h4>
+            </div>
+            <div class="wrap notify-me-balance"><a class="select-all2" id="notifyAboutSelectAll">Select All</a>
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="type-notify-about" type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="fm94o" data-checked="true"/>
+                        <label for="fm94o">Disconnects/Reconnects</label></span>
+                    </div>
+                  </div>
+                </x-minor>
+                <x-major>
+                  <svg class="info-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="m 506.112,102.40003 c -226.15039,0 -409.599984,183.44959 -409.599984,409.59999 0,226.15038 183.449594,409.59996 409.599984,409.59996 226.15039,0 409.59998,-183.44958 409.59998,-409.59996 0,-226.1504 -183.44959,-409.59999 -409.59998,-409.59999 z m 0,86.6304 c 178.30399,0 322.96958,144.63999 322.96958,322.96959 0,178.32958 -144.63999,322.96956 -322.96958,322.96956 -178.30399,0 -322.96959,-144.63998 -322.96959,-322.96956 0,-178.3296 144.64,-322.96959 322.96959,-322.96959 z M 454.40001,730.1632 c 0,-92.05759 0,-184.14079 0,-276.19838 34.6112,0 69.22239,0 103.83359,0 0,92.05759 0,184.14079 0,276.19838 -34.6112,0 -69.22239,0 -103.83359,0 z m -8.2432,-390.52797 c 0,-32.33281 27.62239,-57.13921 59.95519,-57.13921 32.3328,0 59.9552,24.8064 59.9552,57.13921 0,32.33279 -27.6224,57.13919 -59.9552,57.13919 -32.3328,0 -59.95519,-24.8064 -59.95519,-57.13919 z"></path>
+                  </svg>
+                </x-major>
+              </prime-seg>
+              <div class="is-object"></div>
+              <div class="checkbox-widget">
+                <div class="form-element"><span class="checkbox">
+                    <input class="type-notify-about trigger store" type="checkbox" name="Check-Ins" value="check-ins" id="checkIn" data-checked="true" data-target="#checkInThreshold"/>
+                    <label for="checkIn">Check-Ins</label></span>
+                </div>
+              </div>
+              <div class="drawer activated" id="checkInThreshold">
+                <h6>Notify After: </h6>
+                <p class="pseudo-sub">Send alert if a device hasn't checked in for over:</p>
+                <prime-seg>
+                  <x-minor>
+                    <div class="rack vertical-center">
+                      <select class="notify-time-box">
+                        <option value="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <div>
+                        <h6>hour</h6>
+                      </div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <div class="rack vertical-center">
+                      <select class="notify-time-box">
+                        <option value="">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                      </select>
+                      <div>
+                        <h6>minutes</h6>
+                      </div>
+                    </div>
+                  </x-major>
+                </prime-seg>
+              </div>
+              <div class="is-object"></div>
+              <div class="checkbox-widget">
+                <div class="form-element"><span class="checkbox">
+                    <input class="type-notify-about" type="checkbox" name="WAN Failovers To Cellular" value="wan-failovers-to-cellular" id="fc1i1" data-checked="true"/>
+                    <label for="fc1i1">WAN Failovers To Cellular</label></span>
+                </div>
+              </div>
+              <div class="is-object"></div>
+              <div class="checkbox-widget">
+                <div class="form-element"><span class="checkbox">
+                    <input class="type-notify-about" type="checkbox" name="Cellular to WAN" value="cellular-to-wan" id="e79rek" data-checked="true"/>
+                    <label for="e79rek">Cellular to WAN</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </x-minor>
+        <x-major> 
+          <div class="second-wrapper">
+            <div class="clear-wrap">
+              <prime-seg class="vertical-center">
+                <x-major>
+                  <h4>Include Notifications From: </h4>
+                </x-major>
+                <x-minor class="side-by-side-checkbox-option">
+                  <div class="check-all-orgs">
+                    <div class="clear-wrap" style="margin-top: 0px; margin-bottom: 0px">
+                      <div class="is-object"></div>
+                      <div class="checkbox-widget">
+                        <div class="form-element"><span class="checkbox">
+                            <input type="checkbox" name="All Orgs" value="all-orgs" id="allOrgs" data-checked="true"/>
+                            <label for="allOrgs">All Orgs</label></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </x-minor>
+              </prime-seg>
+            </div>
+            <div class="clear-wrap"> 
+              <div class="wrap">
+                <prime-seg class="vertical-center">
+                  <x-minor>
+                    <div class="is-object"></div>
+                    <div class="rack compress">
+                      <div class="checkbox-widget">
+                        <div class="form-element"><span class="checkbox">
+                            <input class="type-org type-org-family" type="checkbox" value="veridian-dynamics" id="firstOrg" data-checked="true"/>
+                            <label for="firstOrg">Veridian Dynamics</label></span></div>
+                      </div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <svg class="trigger arrow-down-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#firstOrgDrawer">
+                      <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                    </svg>
+                  </x-major>
+                </prime-seg>
+                <div class="drawer" id="firstOrgDrawer"><a class="select-all" id="firstOrgSelectAll">Select All</a>
+                  <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 25px">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="type-suborg1" type="checkbox" name="Jabberwocky Project" value="jabberwocky-project" id="suborg1"/>
+                          <label for="suborg1">Jabberwocky Project</label></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-wrap suborg">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="type-suborg1" type="checkbox" name="Green Initiative" value="green-initiative" id="suborg2"/>
+                          <label for="suborg2">Green Initiative</label></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-wrap suborg">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="type-suborg1" type="checkbox" name="Assistant Program" value="assistant-program" id="suborg3"/>
+                          <label for="suborg3">Assistant Program</label></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap">
+                <prime-seg class="vertical-center">
+                  <x-minor>
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="type-org type-org-family" type="checkbox" name="Looney Tunes-OC" value="looney-tunes-oc" id="secondOrg" data-checked="true"/>
+                          <label for="secondOrg">Looney Tunes-OC</label></span>
+                      </div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <svg class="trigger arrow-down-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#secondOrgDrawer">
+                      <path d="M 213.32798,277.328 H 810.67201 L 512.01598,746.67199 Z"></path>
+                    </svg>
+                  </x-major>
+                </prime-seg>
+                <div class="drawer" id="secondOrgDrawer">
+                  <div class="clear-wrap suborg">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="type-suborg2" type="checkbox" name="The Jade Group" value="the-jade-group" id="suborg4"/>
+                          <label for="suborg4">The Jade Group</label></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </x-major>
+      </x-segment>
+    </div>
+  </div>
+</div>
+<script>
+  _$('[data-checked="true"]').attr('checked', 'checked');
+  
+  //- _$('[type="checkbox"]').vanilla.addEventListener('change', (e) => {
+  //- 	if (_$(e.target).vanilla.checked) {
+  //- 		e.target.removeAttribute('checked');
+  //- 	}
+  //- 	else {
+  //- 		e.target.attr('checked', 'checked');
+  //- 	}
+  //- });
+  
+  _$('#allOrgs').vanilla.addEventListener('change', (e) => {
+      if (_$(e.target).vanilla.checked) {
+          _$('.type-org-family').attr('checked', 'checked');
+          
+      }
+      else if (!_$(e.target).vanilla.checked) {
+          _$('.type-org-family').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+  });
+  
+  _$('#firstOrgSelectAll').click((e) => {
+      if (_$(e.target).hasClass('all')) {
+          _$(e.target).removeClass('all').vanilla.innerHTML = 'Select All';
+          _$('.type-suborg1').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+      else if (!_$(e.target).hasClass('all')) {
+          _$(e.target).addClass('all').vanilla.innerHTML = 'Deselect All';
+          _$('.type-suborg1').attr('checked', 'checked');
+      }
+  });
+  
+  _$('#notifyAboutSelectAll').click((e) => {
+      if (_$(e.target).hasClass('all')) {
+          _$(e.target).removeClass('all').vanilla.innerHTML = 'Select All';
+          _$('.type-notify-about').items.forEach((_item_) => {
+              _item_.removeAttribute('checked');
+          });
+      }
+      else if (!_$(e.target).hasClass('all')) {
+          _$(e.target).addClass('all').vanilla.innerHTML = 'Deselect All';
+          _$('.type-notify-about').attr('checked', 'checked');
+      }
+  });
+  
+  _$('.type-suborg1').items.forEach((_item_) => {
+      _item_.addEventListener('change', (e) => {
+          if (_$('.type-suborg1:checked').items.length == _$('.type-suborg1').items.length) {
+              _$('#firstOrgSelectAll').vanilla.innerHTML = 'Deselect All';
+          }
+          else {
+              _$('#firstOrgSelectAll').vanilla.innerHTML = 'Select All';
+          }
+      });
+  });
+  
+  //- _$('#addEmailBtn').click(() => {
+  //-     _$('').vanilla.addEventListener('click', () => {
+  //-         const last = _$('#additionalEmails').items.length - 1;
+  //-         const container = _$('').items[last];
+  //-         container.innerHTML = addEmail.value;
+          
+  //-     });
+  //- });
+  
+  
+  if (!localData['newNotificationV7']['additionalEmailInput']) {
+      _$('#additionalEmailsSection').removeClass('activated');
+  }
+  else {
+      _$('.additional-emails-wrapper .checkbox-widget label').vanilla.innerHTML = localData['newNotificationV7']['additionalEmailInput'];
+  }
+  
+  _$('body').delegate('#addEmailBtn', 'click', (e) => {
+      if (!localData['newNotificationV7']['additionalEmailInput']) {
+          _$('#additionalEmailsSection').removeClass('activated');
+      }
+      else {
+          _$('#additionalEmailsSection').addClass('activated');
+          _$('.additional-emails-wrapper input').attr('checked', 'checked');
+          _$('.additional-emails-wrapper .checkbox-widget label').vanilla.innerHTML = localData['newNotificationV7']['additionalEmailInput'];
+      }
+  });
+</script>
