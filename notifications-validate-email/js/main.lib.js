@@ -34,7 +34,6 @@ jQuishy.prototype.selector = function(arg1) {
 
 _$('.trigger').click((e) => {
 	const targetItem = _$(e.target).attr('data-target');
-	console.log(targetItem);
 	_$(targetItem).items.forEach((_item_) => {
 		if ( !(_$(e.target).hasClass('modal')) ) {
 			if (_$(_item_).hasClass('prepend') || _$(_item_).hasClass('append')) {
@@ -157,8 +156,8 @@ function initTrigger() {
 }
 
 _$('[data-focus]').click((e) => {
-	const target = e.target;
-	console.log(target);
+	const targetItem = _$(e.target).vanilla.dataset.focus;
+	_$(targetItem).vanilla.focus();
 });
 
 $('.closer').parent().delegate('.closer', 'click', function() {
@@ -693,6 +692,45 @@ _$('input[type="submit"][data-store-on-save], a[data-store-on-save]').click(func
 	updateVals();
 });
 
+
+
+
+
+
+
+
+_$('input[type="submit"][data-add-on-save], a[data-add-on-save]').click(function(e) {
+	const storeTarget = _$(e.target).attr('data-add-on-save');
+	const storeTargetRef = _$(e.target).attr('id');
+	_$(storeTarget).items.forEach((_item_) => {
+		val = _item_.value;
+		let items = [];
+
+		if (storeTargetRef in localData[thisPage]) {
+			items = localData[thisPage][storeTargetRef]
+		}
+
+		if (val != '') {
+			items.push(val);
+			localData[thisPage][storeTargetRef] = items;
+			localData.save();
+		}
+		
+		_$(storeTarget).items.forEach((_item_) => {
+			_item_.value = '';
+		});
+
+	});
+	updateVals();
+});
+
+
+
+
+
+
+
+
 function initDefaultCheckboxes() {
 	_$('input[type="checkbox"]').items.forEach((_item_) => {
 		const itemName = _item_.id;
@@ -790,7 +828,7 @@ function updateVals() {
 			val = _$(_item_).attr('data-default');
 			_item_.innerHTML = val;
 		}
-		else if (localData[thisPage].hasOwnProperty(refName)) {
+		else if (localData[thisPage].hasOwnProperty(refName) && !(Array.isArray(localData[thisPage][refName]))) {
 			val = localData[thisPage][refName];
 			_item_.innerHTML = val;
 		}
@@ -799,8 +837,28 @@ function updateVals() {
 			_item_.innerHTML = val;
 		}
 		else {
-			val = '';
-			_item_.innerHTML = val;
+			if (Array.isArray(localData[thisPage][refName])) {
+				localData[thisPage][refName].forEach((_elem_) => {
+					const blueprint = _$(_item_).vanilla.querySelector('.blueprint').cloneNode(true);
+					console.log("We made it to the last!");
+					console.log(_item_);
+					if (_$(blueprint).hasClass('prepend')) {
+						const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').vanilla;
+						_$(_item_).vanilla.querySelector('[data-value').innerHTML = _elem_;
+						_$(_item_).vanilla.prepend(elemFormatted);
+					}
+				});
+				// else if (_$(_item_).hasClass('append')) {
+				// 	const elem = _$(_item_).vanilla.children[0].cloneNode(true);
+				// 	const elemFormatted = _$(elem).removeClass('blueprint').vanilla;
+				// 	_$(_item_).vanilla.append(elemFormatted);
+				// }
+
+			}
+			else {
+				val = '';
+				_item_.innerHTML = val;
+			}
 		}
 	});
 }
