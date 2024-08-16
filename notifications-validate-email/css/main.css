@@ -4131,6 +4131,9 @@ prime-seg {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+.boundary-wrap-bottom {
+  border-bottom: 1px solid #ccc;
+}
 #addEmailForm {
   width: 500px;
 }
@@ -4179,6 +4182,64 @@ prime-seg {
   margin-bottom: 15px;
   line-height: 1.2;
   font-size: 0.85rem;
+}
+.add-tile {
+  position: relative;
+  width: 100%;
+  border: 5px dotted #cacaca;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  fill: rgba(0,0,0,0.4);
+}
+.add-tile svg {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.add-tile:hover {
+  background-color: #b9c4c5;
+  border: 5px dotted #a2acad;
+  fill: #2f4604;
+}
+.additional-email-add {
+  margin-right: 15px;
+}
+.additional-email-field {
+  margin-left: 2px;
+}
+.with-option-dividers div {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: inherit;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.with-option-dividers div:first-child {
+  padding-left: 0;
+}
+.with-option-dividers div:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+.drawer-btn {
+  position: absolute;
+  top: -16px;
+  right: 55px;
+  width: 80px;
+  text-align: center;
+  padding: 8px 15px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+}
+.divider {
+  position: relative;
 }
 @-moz-keyframes animate-toast-in {
   from {

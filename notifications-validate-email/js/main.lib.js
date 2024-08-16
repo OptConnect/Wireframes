@@ -34,11 +34,12 @@ jQuishy.prototype.selector = function(arg1) {
 
 _$('.trigger').click((e) => {
 	const targetItem = _$(e.target).attr('data-target');
+	console.log(targetItem);
 	_$(targetItem).items.forEach((_item_) => {
 		if ( !(_$(e.target).hasClass('modal')) ) {
 			if (_$(_item_).hasClass('prepend') || _$(_item_).hasClass('append')) {
 				e.preventDefault();
-				const blueprint = _$(`${_item_} .blueprint`).vanilla.cloneNode(true);
+				const blueprint = _$(_item_).vanilla.querySelector('.blueprint').cloneNode(true);
 				if (_$(_item_).hasClass('prepend')) {
 					const idName = _$(blueprint.querySelectorAll('input[type="checkbox"]')).vanilla[0].id + '-' + uuidv4();
 					_$(blueprint.querySelectorAll('input[type="checkbox"]')).vanilla[0].id = idName;
@@ -154,6 +155,11 @@ function initTrigger() {
 		});
 	});
 }
+
+_$('[data-focus]').click((e) => {
+	const target = e.target;
+	console.log(target);
+});
 
 $('.closer').parent().delegate('.closer', 'click', function() {
 	var targetItem = $(this).data('target');

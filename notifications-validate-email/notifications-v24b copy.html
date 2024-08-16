@@ -111,7 +111,7 @@
                 <div class="center-justify button-module"><a class="close-modal button" href="#" target="#">Ok, Got it!</a></div>
       </div>
       <div class="toast" id="resendEmailToast"> 
-        <p class="center-justify">Validation email has been re-sent!</p>
+        <p class="center-justify">Validation email has been resent!</p>
       </div>
       <div class="modal window" id="resendEmailModal">
         <h4 class="center-justify">Resend validation email?</h4>
@@ -139,12 +139,13 @@
       </div>
       <div class="modal window" id="addEmailModal">
         <h4>Add An Email</h4>
-        <div class="form-element">
-          <input class="additional-email" type="text" id="additionalEmailInput"/>
-          <label>email</label>
-        </div>
-        <prime-seg>
-          <x-major></x-major>
+        <prime-seg class="center" id="addEmailForm">
+          <x-major>
+            <div class="form-element">
+              <input class="additional-email" type="text" id="additionalEmailInput"/>
+              <label>email</label>
+            </div>
+          </x-major>
           <x-minor>
             <div class="form-element">
               <input class="close-modal trigger" type="submit" value="Add" id="addEmailBtn" data-store="addEmailModal" data-target=".additional-emails"/>
@@ -267,7 +268,6 @@
                     <div class="button-module"><a class="button" href="notifications-v22b.html" target="notifications-v22b.html">Version 8</a></div>
                     <div class="button-module"><a class="button" href="notifications-v23b.html" target="notifications-v23b.html">Version 9</a></div>
                     <div class="button-module"><a class="emphasize button" href="notifications-v24b.html" target="notifications-v24b.html">Version 10</a></div>
-                    <div class="button-module"><a class="emphasize button" href="notifications-v25b.html" target="notifications-v25b.html">Version 11</a></div>
                 </div>
                 <div class="clear-wrap">
                   <prime-seg class="vertical-center">
@@ -276,12 +276,12 @@
                     </x-major>
                     <x-minor>
                       <div class="rack vertical-center">
-                        <div class="emphasize">
+                        <div>
                                   <svg class="active-color add-template add-bubble-solid-icon" width="30px" height="30px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-goto="new-notification-v15b.html">
                                     <path d="M 511.99998,0 C 794.59198,0 1024,229.408 1024,511.99998 1024,794.59198 794.59198,1024 511.99998,1024 229.408,1024 0,794.59198 0,511.99998 0,229.408 229.408,0 511.99998,0 Z m 277.952,548.41598 V 475.55199 H 548.44799 v -241.504 h -72.86401 v 241.504 H 234.07999 v 72.86399 h 241.50399 v 241.504 h 72.86401 v -241.504 z"></path>
                                   </svg>
                         </div>
-                        <div class="emphasize"><a class="trigger" data-target="#configSection" id="collapseEmail">Collapse</a></div>
+                        <div><a class="trigger" data-target="#configSection" id="collapseEmail">Collapse</a></div>
                       </div>
                     </x-minor>
                   </prime-seg>
@@ -289,7 +289,7 @@
                     <prime-seg class="vertical-center">
                       <x-major>
                         <p>
-                           Email "<strong class="item" data-ref="newEmail"> </strong>" is pending.  Go to your email and click on the "verify email" link. <a class="trigger" href="#" data-target="#resendEmailToast">Resend link</a></p>
+                           Email "<strong class="item" data-ref="newEmail"> </strong>" is pending.  Go to your email and click on the "verify email" link.</p>
                       </x-major>
                       <x-minor>
                                 <svg class="trigger close-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#pendingEmailMessage">
@@ -299,123 +299,130 @@
                     </prime-seg>
                   </div>
                   <div class="drawer activated" id="configSection">
-                    <x-segment of="2">
-                      <x-cell>
-                        <div class="wrap">
-                          <prime-seg class="vertical-center">
-                            <x-major>
-                              <h5>Email:</h5>
-                            </x-major>
-                            <x-minor>
-                                      <svg class="modal-trigger active-color add-bubble-solid-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#addEmailModal">
-                                        <path d="M 511.99998,0 C 794.59198,0 1024,229.408 1024,511.99998 1024,794.59198 794.59198,1024 511.99998,1024 229.408,1024 0,794.59198 0,511.99998 0,229.408 229.408,0 511.99998,0 Z m 277.952,548.41598 V 475.55199 H 548.44799 v -241.504 h -72.86401 v 241.504 H 234.07999 v 72.86399 h 241.50399 v 241.504 h 72.86401 v -241.504 z"></path>
-                                      </svg>
-                            </x-minor>
-                          </prime-seg>
-                          <div class="clear-wrap" style="margin-top: 10px; margin-bottom: 25px">
-                            <prime-seg class="vertical-center">
-                              <x-minor>
-                                <div class="is-object"></div>
-                                <div class="checkbox-widget">
-                                  <div class="form-element"><span class="checkbox">
-                                      <input type="checkbox" name="bobross@megacorp.com" value="bobross@megacorp.com" id="2pysw" data-checked="true"/>
-                                      <label for="2pysw">bobross@megacorp.com</label></span>
-                                  </div>
-                                </div>
-                              </x-minor>
-                              <x-major>
-                                <div class="sub default-label">
-                                   [ <strong>user </strong>]</div>
-                              </x-major>
-                            </prime-seg>
-                            <div class="clear-wrap" style="margin-top: 30px; margin-bottom: 25px">
-                              <h6>Additional Emails</h6>
-                              <div class="pseudo-sub additional-emails-wrapper additional-email-list additional-emails append" id="additionalEmails">
-                                <div class="blueprint"> 
-                                  <prime-seg class="vertical-center">
-                                    <x-minor>
-                                      <div class="is-object"></div>
-                                      <div class="checkbox-widget">
-                                        <div class="form-element"><span class="checkbox">
-                                            <input class="store" type="checkbox" name="newEmail@megacorp.com" value="newemail@megacorp.com" id="newEmail" data-checked="true"/>
-                                            <label for="newEmail">newEmail@megacorp.com</label></span>
-                                        </div>
-                                      </div>
-                                    </x-minor>
-                                    <x-major>
-                                      <div class="rack">
-                                                <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                                                  <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
-                                                </svg>
-                                        <div>
-                                          <div class="verified-badge modal-trigger" data-target="#resendEmailModal">not verified</div>
-                                        </div>
-                                      </div>
-                                    </x-major>
-                                  </prime-seg>
-                                </div>
-                                <prime-seg class="vertical-center">
-                                  <x-minor>
-                                    <div class="checkbox-widget">
-                                      <div class="form-element"><span class="checkbox">
-                                          <input class="store" type="checkbox" name="anotherEmail@megacorp.com" value="anotheremail@megacorp.com" id="anotherEmail"/>
-                                          <label for="anotherEmail">anotherEmail@megacorp.com</label></span>
-                                      </div>
-                                    </div>
-                                  </x-minor>
-                                  <x-major>
-                                    <div class="rack">
-                                              <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                                                <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
-                                              </svg>
-                                    </div>
-                                  </x-major>
-                                </prime-seg>
-                                <prime-seg class="vertical-center">
-                                  <x-minor>
-                                    <div class="checkbox-widget">
-                                      <div class="form-element"><span class="checkbox">
-                                          <input class="store" type="checkbox" name="additionalEmail@megacorp.com" value="additionalemail@megacorp.com" id="additionalEmail"/>
-                                          <label for="additionalEmail">additionalEmail@megacorp.com</label></span>
-                                      </div>
-                                    </div>
-                                  </x-minor>
-                                  <x-major>
-                                    <div class="rack">
-                                              <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                                                <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
-                                              </svg>
-                                    </div>
-                                  </x-major>
-                                </prime-seg>
+                    <div class="boundary-wrap">
+                      <x-segment of="2">
+                        <x-cell>
+                          <div class="clear-wrap">
+                            <div class="wrap">
+                              <prime-seg class="vertical-center">
+                                <x-major>
+                                  <h5>Email:</h5>
+                                </x-major>
+                                <x-minor>
+                                          <svg class="modal-trigger active-color add-bubble-solid-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" data-target="#addEmailModal">
+                                            <path d="M 511.99998,0 C 794.59198,0 1024,229.408 1024,511.99998 1024,794.59198 794.59198,1024 511.99998,1024 229.408,1024 0,794.59198 0,511.99998 0,229.408 229.408,0 511.99998,0 Z m 277.952,548.41598 V 475.55199 H 548.44799 v -241.504 h -72.86401 v 241.504 H 234.07999 v 72.86399 h 241.50399 v 241.504 h 72.86401 v -241.504 z"></path>
+                                          </svg>
+                                </x-minor>
+                              </prime-seg>
+                              <div class="clear-wrap" style="margin-top: 10px; margin-bottom: 25px">
                                 <prime-seg class="vertical-center">
                                   <x-minor>
                                     <div class="is-object"></div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input class="store" type="checkbox" name="oneMoreEmail@megacorp.com" value="onemoreemail@megacorp.com" id="oneMoreEmail" data-checked="true"/>
-                                          <label for="oneMoreEmail">oneMoreEmail@megacorp.com</label></span>
+                                          <input type="checkbox" name="bobross@megacorp.com" value="bobross@megacorp.com" id="6h88t" data-checked="true"/>
+                                          <label for="6h88t">bobross@megacorp.com</label></span>
                                       </div>
                                     </div>
                                   </x-minor>
                                   <x-major>
-                                    <div class="rack">
-                                              <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                                                <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
-                                              </svg>
-                                      <div>
-                                        <div class="verified-badge modal-trigger" data-target="#resendEmailModal">not verified</div>
-                                      </div>
-                                    </div>
+                                    <div class="sub default-label">
+                                       [ <strong>user </strong>]</div>
                                   </x-major>
                                 </prime-seg>
+                                <div class="clear-wrap" style="margin-top: 30px; margin-bottom: 25px">
+                                  <h6>Additional Emails</h6>
+                                  <div class="pseudo-sub additional-emails-wrapper additional-email-list additional-emails append" id="additionalEmails">
+                                    <div class="blueprint"> 
+                                      <prime-seg class="vertical-center">
+                                        <x-minor>
+                                          <div class="is-object"></div>
+                                          <div class="checkbox-widget">
+                                            <div class="form-element"><span class="checkbox">
+                                                <input class="store" type="checkbox" name="newEmail@megacorp.com" value="newemail@megacorp.com" id="newEmail" data-checked="true"/>
+                                                <label for="newEmail">newEmail@megacorp.com</label></span>
+                                            </div>
+                                          </div>
+                                        </x-minor>
+                                        <x-major>
+                                          <div class="rack">
+                                                    <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                      <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                                    </svg>
+                                            <div>
+                                              <div class="verified-badge notVerifiedBadge"></div>
+                                            </div>
+                                          </div>
+                                        </x-major>
+                                      </prime-seg>
+                                    </div>
+                                    <prime-seg class="vertical-center">
+                                      <x-minor>
+                                        <div class="checkbox-widget">
+                                          <div class="form-element"><span class="checkbox">
+                                              <input class="store" type="checkbox" name="anotherEmail@megacorp.com" value="anotheremail@megacorp.com" id="anotherEmail"/>
+                                              <label for="anotherEmail">anotherEmail@megacorp.com</label></span>
+                                          </div>
+                                        </div>
+                                      </x-minor>
+                                      <x-major>
+                                        <div class="rack">
+                                                  <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                                  </svg>
+                                        </div>
+                                      </x-major>
+                                    </prime-seg>
+                                    <prime-seg class="vertical-center">
+                                      <x-minor>
+                                        <div class="checkbox-widget">
+                                          <div class="form-element"><span class="checkbox">
+                                              <input class="store" type="checkbox" name="additionalEmail@megacorp.com" value="additionalemail@megacorp.com" id="additionalEmail"/>
+                                              <label for="additionalEmail">additionalEmail@megacorp.com</label></span>
+                                          </div>
+                                        </div>
+                                      </x-minor>
+                                      <x-major>
+                                        <div class="rack">
+                                                  <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                                  </svg>
+                                        </div>
+                                      </x-major>
+                                    </prime-seg>
+                                    <prime-seg class="vertical-center">
+                                      <x-minor>
+                                        <div class="is-object"></div>
+                                        <div class="checkbox-widget">
+                                          <div class="form-element"><span class="checkbox">
+                                              <input class="store" type="checkbox" name="oneMoreEmail@megacorp.com" value="onemoreemail@megacorp.com" id="oneMoreEmail" data-checked="true"/>
+                                              <label for="oneMoreEmail">oneMoreEmail@megacorp.com</label></span>
+                                          </div>
+                                        </div>
+                                      </x-minor>
+                                      <x-major>
+                                        <div class="rack">
+                                                  <svg class="active-color delete-icon" width="15px" height="15px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                                    <path d="M 191.99999,1024 H 832 L 896,320 H 127.99999 Z M 640,128 V 0 H 383.99998 V 128 H 63.999995 V 320 L 127.99999,256 H 896 l 64,64 V 128 Z m -64,0 H 448 V 64 h 128 z"></path>
+                                                  </svg>
+                                          <div class="badge-fixed not-verified">
+                                            <div class="verified-badge2 center-justify active-color trigger" data-target="#resendEmailToast">not verified</div>
+                                          </div>
+                                          <div class="badge-fixed resend-email vertical">
+                                            <div class="verified-badge2">resend email</div>
+                                          </div>
+                                        </div>
+                                      </x-major>
+                                    </prime-seg>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </x-cell>
-                      <x-cell></x-cell>
-                    </x-segment>
+                        </x-cell>
+                        <x-cell></x-cell>
+                      </x-segment>
+                    </div>
                   </div>
                 </div>
                 <div class="clear-wrap"> 
@@ -452,26 +459,26 @@
                                     <div class="is-object"></div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="pzbo6" data-checked="true"/>
-                                          <label for="pzbo6">Disconnects/Reconnects</label></span>
+                                          <input type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="3b3px" data-checked="true"/>
+                                          <label for="3b3px">Disconnects/Reconnects</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="b0vb5" data-checked="true"/>
-                                          <label for="b0vb5">Check-Ins</label></span>
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="s98c6" data-checked="true"/>
+                                          <label for="s98c6">Check-Ins</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="WAN Failovers To Cellular" value="wan-failovers-to-cellular" id="xwrht" data-checked="true"/>
-                                          <label for="xwrht">WAN Failovers To Cellular</label></span>
+                                          <input type="checkbox" name="WAN Failovers To Cellular" value="wan-failovers-to-cellular" id="lf8e5" data-checked="true"/>
+                                          <label for="lf8e5">WAN Failovers To Cellular</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Cellular to WAN" value="cellular-to-wan" id="xdhkt" data-checked="true"/>
-                                          <label for="xdhkt">Cellular to WAN</label></span>
+                                          <input type="checkbox" name="Cellular to WAN" value="cellular-to-wan" id="3rg1gi" data-checked="true"/>
+                                          <label for="3rg1gi">Cellular to WAN</label></span>
                                       </div>
                                     </div>
                                   </div>
