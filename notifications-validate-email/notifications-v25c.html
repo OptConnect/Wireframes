@@ -286,8 +286,8 @@
                                     <div class="is-object"></div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="bobross@megacorp.com" value="bobross@megacorp.com" id="38zht" data-checked="true"/>
-                                          <label for="38zht">bobross@megacorp.com</label></span>
+                                          <input type="checkbox" name="bobross@megacorp.com" value="bobross@megacorp.com" id="o0fm1" data-checked="true"/>
+                                          <label for="o0fm1">bobross@megacorp.com</label></span>
                                       </div>
                                     </div>
                                   </x-minor>
@@ -451,26 +451,26 @@
                                     <div class="is-object"></div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="275lk" data-checked="true"/>
-                                          <label for="275lk">Disconnects/Reconnects</label></span>
+                                          <input type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="b22g4" data-checked="true"/>
+                                          <label for="b22g4">Disconnects/Reconnects</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="wo54s" data-checked="true"/>
-                                          <label for="wo54s">Check-Ins</label></span>
+                                          <input type="checkbox" name="Check-Ins" value="check-ins" id="2et7p" data-checked="true"/>
+                                          <label for="2et7p">Check-Ins</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="WAN Failovers To Cellular" value="wan-failovers-to-cellular" id="idj31" data-checked="true"/>
-                                          <label for="idj31">WAN Failovers To Cellular</label></span>
+                                          <input type="checkbox" name="WAN Failovers To Cellular" value="wan-failovers-to-cellular" id="dof53" data-checked="true"/>
+                                          <label for="dof53">WAN Failovers To Cellular</label></span>
                                       </div>
                                     </div>
                                     <div class="checkbox-widget">
                                       <div class="form-element"><span class="checkbox">
-                                          <input type="checkbox" name="Cellular to WAN" value="cellular-to-wan" id="kcamqi" data-checked="true"/>
-                                          <label for="kcamqi">Cellular to WAN</label></span>
+                                          <input type="checkbox" name="Cellular to WAN" value="cellular-to-wan" id="xob4o" data-checked="true"/>
+                                          <label for="xob4o">Cellular to WAN</label></span>
                                       </div>
                                     </div>
                                   </div>
@@ -526,4 +526,16 @@
 <script src="js/TweenMax.min.js"></script>
 <script src="js/main.lib.js"></script>
 <script src="js/magicVial-0.6.2.js"></script>
-<script></script>
+<script>
+   _$('[data-checked="true"]').attr('checked', 'checked');
+  
+  _$('#collapseEmail').click((e) => {
+      const targetElem = _$(e.target).attr('data-target');
+      if (_$(targetElem).hasClass('activated') || _$(targetElem).hasClass('activate-in')) {
+          _$(e.target).vanilla.innerHTML = "Collapse";
+      }
+      else {
+          _$(e.target).vanilla.innerHTML = "Expand";
+      }
+  })
+</script>
