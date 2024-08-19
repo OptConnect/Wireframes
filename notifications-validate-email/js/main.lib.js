@@ -872,7 +872,7 @@ function updateVals() {
 						const removeId = removeElem.dataset.remove;
 						
 						removeElem.addEventListener('click', (e) => {
-							const choice = confirm(`You are about to delete "${forValue}". Are you sure?`);
+							const choice = confirm(`You are about to remove "${forValue}".\n\nAre you sure?`);
 							if (choice) {
 								let index = localData[thisPage][refName].indexOf(removeId);
 								
