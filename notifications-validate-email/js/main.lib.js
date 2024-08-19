@@ -717,11 +717,10 @@ _$('input[type="submit"][data-add-on-save], a[data-add-on-save]').click(function
 		}
 		
 		_$(storeTarget).items.forEach((_item_) => {
+			console.log("items:",_item_)
 			_item_.value = '';
 		});
-
 	});
-	updateVals();
 });
 
 
@@ -829,6 +828,7 @@ function updateVals() {
 			_item_.innerHTML = val;
 		}
 		else if (localData[thisPage].hasOwnProperty(refName) && !(Array.isArray(localData[thisPage][refName]))) {
+			console.log("Wrong one!");
 			val = localData[thisPage][refName];
 			_item_.innerHTML = val;
 		}
@@ -837,27 +837,39 @@ function updateVals() {
 			_item_.innerHTML = val;
 		}
 		else {
+			console.log(_item_);
+			console.log("running:", localData[thisPage][refName]);
 			if (Array.isArray(localData[thisPage][refName])) {
+				const primeElem = _$(_item_).vanilla;
+				let child = primeElem.firstChild;
+
+				while (child) {
+					const nextSibling = child.nextSibling; // Save the next sibling before potentially removing the current child
+					if (!child.classList || !child.classList.contains('blueprint')) {
+						primeElem.removeChild(child);
+					}
+					child = nextSibling; // Move to the next sibling
+				}
+
 				localData[thisPage][refName].forEach((_elem_) => {
 					const blueprint = _$(_item_).vanilla.querySelector('.blueprint').cloneNode(true);
-					console.log("We made it to the last!");
-					console.log(_item_);
 					if (_$(blueprint).hasClass('prepend')) {
 						const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').vanilla;
-						_$(_item_).vanilla.querySelector('[data-value').innerHTML = _elem_;
+						_$(blueprint).vanilla.querySelector('[data-value]').innerHTML = _elem_;
 						_$(_item_).vanilla.prepend(elemFormatted);
 					}
+					else if (_$(blueprint).hasClass('append')) {
+						const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').vanilla;
+						_$(blueprint).vanilla.querySelector('[data-value]').innerHTML = _elem_;
+						_$(_item_).vanilla.append(elemFormatted);
+					}
 				});
-				// else if (_$(_item_).hasClass('append')) {
-				// 	const elem = _$(_item_).vanilla.children[0].cloneNode(true);
-				// 	const elemFormatted = _$(elem).removeClass('blueprint').vanilla;
-				// 	_$(_item_).vanilla.append(elemFormatted);
-				// }
-
 			}
 			else {
-				val = '';
-				_item_.innerHTML = val;
+				if (!_item_.querySelector('.blueprint')) {
+					val = '';
+					_item_.innerHTML = val;
+				}
 			}
 		}
 	});
