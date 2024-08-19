@@ -853,14 +853,50 @@ function updateVals() {
 
 				localData[thisPage][refName].forEach((_elem_) => {
 					const blueprint = _$(_item_).vanilla.querySelector('.blueprint').cloneNode(true);
-					if (_$(blueprint).hasClass('prepend')) {
-						const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').vanilla;
+					const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').addClass('blueprinted').vanilla;
+					const forValue = _elem_.replace(' ', '');
+					if (_$(blueprint).vanilla.querySelector('input[data-value]')) {
+						_$(blueprint).vanilla.querySelector('input[data-value] + label').innerHTML = _elem_;
+						_$(blueprint).vanilla.querySelector('input[data-value] + label').htmlFor = forValue;
+						_$(blueprint).vanilla.querySelector('input[data-value]').id = forValue;
+					}
+					else {
 						_$(blueprint).vanilla.querySelector('[data-value]').innerHTML = _elem_;
+					}
+
+					// if blueprint uses data-remove, as well
+					if (_$(blueprint).vanilla.querySelector('[data-remove]')) {
+						const removeElem = _$(blueprint).vanilla.querySelector('[data-remove]');
+						
+						removeElem.dataset.remove = forValue;
+						const removeId = removeElem.dataset.remove;
+						
+						removeElem.addEventListener('click', (e) => {
+							const choice = confirm(`You are about to delete "${forValue}". Are you sure?`);
+							if (choice) {
+								let index = localData[thisPage][refName].indexOf(removeId);
+								
+								if (index > -1) {
+									localData[thisPage][refName].splice(index, 1);
+								}
+	
+								if (localData[thisPage][refName].length == 0) {
+									delete localData[thisPage][refName];
+								}
+	
+								const parent = removeElem.closest('.blueprinted');
+	
+								parent.remove();
+								localData.save();
+							}
+						});
+					}
+
+					if (_$(blueprint).hasClass('prepend')) {
+						
 						_$(_item_).vanilla.prepend(elemFormatted);
 					}
-					else if (_$(blueprint).hasClass('append')) {
-						const elemFormatted = _$(blueprint).removeClass('blueprint').removeClass('prepend').vanilla;
-						_$(blueprint).vanilla.querySelector('[data-value]').innerHTML = _elem_;
+					else {
 						_$(_item_).vanilla.append(elemFormatted);
 					}
 				});
