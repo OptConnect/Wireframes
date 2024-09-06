@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/wc-segments.lib.min.css">
+    <script src="js/segments.lib.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="use-native-click" id="drawer">
+      <nav class="menu-drawer">
+        <div>
+          <ul>
+            <li>
+              <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+            </li>
+            <li class="right">
+              <div class="profile image-widget">
+                <div class="image-border"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="clear-wrap menu-drawer-search-cleanup">
+            <div class="search-widget" data-target="search-results.html">
+              <div class="searchfield">
+                <div class="icon-search"></div>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="siteWrapper">
+      <header>
+        <div class="show-for-mobile">
+          <div class="rack compress mobile-cleanup vertical-align">
+            <div class="icon-menu toggle use-native-click" data-target="body, #siteWrapper, #drawer"></div>
+            <div class="logo-wrapper"><a class="logo" href="index.html">TheSite</a></div>
+          </div>
+        </div>
+      </header>
+      <nav class="desktop-nav dark hide-for-mobile">
+        <prime-seg class="vertical-align">
+          <x-major>
+            <ul>
+              <li>
+                <div class="logo-wrapper"><a class="logo" href="index.html">Summit</a></div>
+              </li>
+              <li class="right">
+                <div class="profile image-widget">
+                  <div class="image-border"></div>
+                </div>
+              </li>
+            </ul>
+          </x-major>
+          <x-minor>
+            <div class="search-widget" data-target="search-results.html">
+              <div class="searchfield">
+                <div class="icon-search"></div>
+                <input type="text">
+              </div>
+            </div>
+          </x-minor>
+        </prime-seg>
+      </nav>
+      <prime-seg id="main">
+        <x-minor class="sidebar-wrapper">
+          <div class="nav-highlight" id="sidebar"><a class="bar-link" href="index.html">
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="icon-home"></div>
+                </x-minor>
+                <x-major>
+                  <div>Dashboard</div>
+                </x-major>
+              </prime-seg></a><a class="bar-link" href="devices.html">
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="icon-file"></div>
+                </x-minor>
+                <x-major>
+                  <div>Devices</div>
+                </x-major>
+              </prime-seg></a>
+            <!-- nav template:-->
+            <!-- +bar-link("title", "icon-file", "url")-->
+            <!-- :end-->
+          </div>
+        </x-minor>
+        <x-mnajor>
+          <div id="content">
+            <panel-wrapper class="light">
+              <panel-inner space="25" bottom="bottom">
+                <div class="clear-wrap" style="margin-top: 25px; margin-bottom: 25px">
+                  <x-segment class="vertical-center" of="3">
+                    <x-cell>
+                      <h3>6 Devices</h3>
+                    </x-cell>
+                    <x-cell>
+                      <div class="page-widget">
+                        <div class="pagination vertical-center">
+                          <div class="left-arrow-indicator pagination-elem">
+                            <svg class="arrow-left-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                              <path d="M 746.67199,213.32798 V 810.67201 L 277.328,512.01598 Z"></path>
+                            </svg>
+                          </div>
+                          <div class="pagination-elem">
+                            <div>1</div>
+                          </div>
+                          <div class="pagination-elem">
+                            <div>2</div>
+                          </div>
+                          <div class="pagination-elem">
+                            <div>3</div>
+                          </div>
+                          <div class="pagination-elem">
+                            <div>4</div>
+                          </div>
+                          <div class="pagination-elem">
+                            <div>5</div>
+                          </div>
+                          <div class="right-arrow-indicator pagination-elem">
+                            <svg class="arrow-right-icon" width="19px" height="19px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                              <path d="M 277.32798,213.328 V 810.67199 L 746.67201,512.016 Z"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </x-cell>
+                  </x-segment>
+                  <div class="divider"></div>
+                </div>
+                <div class="clear-wrap" style="margin-top: 25px; margin-bottom: 25px">
+                  <x-segment class="vertical-center" of="3">
+                    <x-cell class="select-all-checkbox">
+                      <prime-seg class="vertical-center">
+                        <x-major>
+                          <div class="checkbox-widget">
+                            <div class="form-element"><span class="checkbox">
+                                <input type="checkbox" name="Select All" value="select-all" id="n0rfk"/>
+                                <label for="n0rfk">Select All</label></span>
+                            </div>
+                          </div>
+                        </x-major>
+                        <x-minor>
+                          <svg class="checkbox-features hide close-bubble-solid-icon" width="21px" height="21px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <path d="m 512,0 c 282.592,0 512,229.408 512,512 0,282.592 -229.408,512 -512,512 C 229.408,1024 0,794.592 0,512 0,229.408 229.408,0 512,0 Z m 170.784,734.304 51.52,-51.52 L 563.52,512 734.304,341.216 682.784,289.696 512,460.48 341.216,289.696 289.696,341.216 460.48,512 289.696,682.784 341.216,734.304 512,563.52 Z"></path>
+                          </svg>
+                        </x-minor>
+                      </prime-seg>
+                    </x-cell>
+                    <x-cell></x-cell>
+                    <x-cell>
+                      <div class="rack right">
+                        <prime-seg>
+                          <x-minor>
+                            <div class="fade" id="bookmarkPanel">
+                              <div>Region: Ogden</div>
+                              <div>Northeast Maintenance </div>
+                              <div>Third Bookmark</div>
+                            </div>
+                            <div class="rack">
+                              <div class="device-action-icon">
+                                <svg class="trigger close-bubble-solid-icon" width="17px" height="17px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                  <path d="m 512,0 c 282.592,0 512,229.408 512,512 0,282.592 -229.408,512 -512,512 C 229.408,1024 0,794.592 0,512 0,229.408 229.408,0 512,0 Z m 170.784,734.304 51.52,-51.52 L 563.52,512 734.304,341.216 682.784,289.696 512,460.48 341.216,289.696 289.696,341.216 460.48,512 289.696,682.784 341.216,734.304 512,563.52 Z"></path>
+                                </svg>
+                              </div>
+                              <svg class="upload-icon" width="17px" height="17px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                                <path d="M 511.99999,3.5e-6 C 229.31199,3.5e-6 -1.5e-5,229.31201 -1.5e-5,512.00001 -1.5e-5,794.688 229.31199,1024 511.99999,1024 794.688,1024 1024,794.688 1024,512.00001 1024,229.31201 794.68801,3.4999999e-6 511.99999,3.5e-6 Z m 0,180.0960065 c 105.856,105.856 211.712,211.712 317.56802,317.568 H 681.21599 c 0,103.392 0,206.784 0,310.17599 h -338.4 c 0,-103.39199 0,-206.78399 0,-310.17599 h -148.384 c 105.856,-105.856 211.712,-211.712 317.568,-317.568 z"></path>
+                              </svg>
+                            </div>
+                          </x-minor>
+                          <x-major>Excel</x-major>
+                        </prime-seg>
+                        <div class="trigger" id="selectColumns" data-target="#columnSelections">Columns
+                          <div class="left-justify fade" id="columnSelections">
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Device ID" value="device-id" id="k5x6z"/>
+                                  <label for="k5x6z">Device ID</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="true" value="true" id="61qf4"/>
+                                  <label for="61qf4">true</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Serial #" value="serial-#" id="fql0e"/>
+                                  <label for="fql0e">Serial #</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Network Type" value="network-type" id="zttkr"/>
+                                  <label for="zttkr">Network Type</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="IP Address" value="ip-address" id="tt3l4"/>
+                                  <label for="tt3l4">IP Address</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Status" value="status" id="tw1ur"/>
+                                  <label for="tw1ur">Status</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Model" value="model" id="zzb9r"/>
+                                  <label for="zzb9r">Model</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Description" value="description" id="moptrj"/>
+                                  <label for="moptrj">Description</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Location" value="location" id="wjdsu"/>
+                                  <label for="wjdsu">Location</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Terminal ID" value="terminal-id" id="lerg1i"/>
+                                  <label for="lerg1i">Terminal ID</label></span>
+                              </div>
+                            </div>
+                            <div class="checkbox-widget">
+                              <div class="form-element"><span class="checkbox">
+                                  <input type="checkbox" name="Settings" value="settings" id="w8smw"/>
+                                  <label for="w8smw">Settings</label></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </x-cell>
+                  </x-segment>
+                </div>
+                <table>
+                  <colgroup> 
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col class="fade">
+                  </colgroup>
+                  <thead>
+                    <tr> 
+                      <th class="check-item"></th>
+                      <th>Device ID </th>
+                      <th>Serial #</th>
+                      <th>Network Type</th>
+                      <th>IP Address</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="a7ch9"/>
+                              <label for="a7ch9"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">Pellentesque habitant </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Nulla accumsan </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="i99qz"/>
+                              <label for="i99qz"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">Curabitur bibendum </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Cum sociis </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="9jplw"/>
+                              <label for="9jplw"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">Sed vel </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Nullam at </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="qobh6"/>
+                              <label for="qobh6"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">In nisl </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Mauris dictum </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="rtble"/>
+                              <label for="rtble"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">Fusce tellus </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Nulla turpis </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="check-item">
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input type="checkbox" name="" id="6l41u"/>
+                              <label for="6l41u"></label></span>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-goto="device-details.html"><span class="blockletter">Aenean placerat </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000000000</td>
+                      <td data-goto="device-details.html"><span class="blockletter">Fusce wisi </span>
+                      </td>
+                      <td class="blockletter" data-goto="device-details.html">00000000000000</td>
+                      <td data-goto="device-details.html">
+                        <div class="status-label"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </panel-inner>
+            </panel-wrapper>
+          </div>
+        </x-mnajor>
+      </prime-seg>
+    </div>
+  </body>
+</html>
+<div class="footer-nav"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquishy.min.js"></script>
+<script src="js/main.lib.js"></script>
+<script src="js/magicVial-0.6.2.js"></script>
+<script>
+  _$('input[type="checkbox"]').click(() => {
+  	if (_$('input[type="checkbox"]:checked').items.length) {
+  		_$('.checkbox-features').removeClass('hide');
+  		_$('.checkbox-features').addClass('show');
+  	}
+  	else {
+  		_$('.checkbox-features').removeClass('show');
+  		_$('.checkbox-features').addClass('hide');
+  	}
+  });
+</script>
