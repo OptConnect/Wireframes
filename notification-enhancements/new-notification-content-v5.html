@@ -1,0 +1,339 @@
+
+<div class="wrap">
+  <div class="heading-wrap dark">
+    <div class="card-inner"> 
+      <h4>Configuration: V5</h4>
+    </div>
+  </div>
+  <div class="card-inner card-top-bottom">
+    <div class="clear-wrap" style="margin-top: 15px; margin-bottom: 15px">
+      <div class="wrap medium">
+        <prime-seg class="vertical-center">
+          <x-major>
+            <prime-seg class="vertical-center">
+              <x-minor>
+                <prime-seg class="vertical-center">
+                  <x-minor class="primary-email-solo"> 
+                    <div class="rack vertical-center">
+                      <svg class="email-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <path d="M 853.29599,170.65601 H 170.64 c -47.136,0 -84.895995,38.176 -84.895995,85.344 l -0.416,511.99998 c 0,47.136 38.175995,85.344 85.343995,85.344 h 682.65599 c 47.136,0 85.34401,-38.176 85.34401,-85.344 V 256.00001 c 0,-47.136 -38.176,-85.344 -85.34401,-85.344 z m 0,170.656 -341.34399,213.344 -341.344,-213.344 v -85.344 l 341.344,213.344 341.344,-213.344 z"></path>
+                      </svg>
+                      <div>bobross@megacorp.com</div>
+                    </div>
+                  </x-minor>
+                  <x-major></x-major>
+                </prime-seg>
+              </x-minor>
+              <x-major class="additional-emails-wrapper additional-email-l">
+                <div class="pseudo-sub" data-ref="additionalEmailList">
+                  <div class="blueprint"><span data-value="data-value"></span></div>
+                </div>
+              </x-major>
+            </prime-seg>
+          </x-major>
+          <x-minor><a class="modal-trigger" data-target="#configModal">edit</a></x-minor>
+        </prime-seg>
+      </div>
+    </div>
+    <div class="clear-wrap" style="margin-top: 40px; margin-bottom: 15px">
+      <x-segment class="stretch yep" of="5">
+        <x-minor class="stretch yep">
+          <div class="yep">
+            <div class="clear-wrap">
+              <h4>Notify Me About: </h4>
+            </div>
+            <div class="wrap notify-me-balance medium"><a class="select-all2 trigger" id="notifyAboutSelectAll" data-target=".type-notify-about" data-label="Select All|Unselect All">Select All</a>
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="type-notify-about check trigger store" type="checkbox" name="Check-Ins" value="check-ins" id="checkIn" data-target="#checkInThreshold"/>
+                        <label for="checkIn">Check-Ins</label></span>
+                    </div>
+                  </div>
+                </x-minor>
+                <x-major class="relative">
+                  <div class="info-popup fade wrap dark" id="checkinPopup">
+                    <div class="text">Check-In devices report a cadence, or &quot;heartbeat&quot;, usually every 1/2 hr.  A missed check-in indicates a device that may be offline</div>
+                  </div>
+                  <div class="target-area trigger" data-target="#checkinPopup" data-untarget="#wanFailoverPopup, #connectivityPopup"></div>
+                  <svg class="info-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="m 506.112,102.40003 c -226.15039,0 -409.599984,183.44959 -409.599984,409.59999 0,226.15038 183.449594,409.59996 409.599984,409.59996 226.15039,0 409.59998,-183.44958 409.59998,-409.59996 0,-226.1504 -183.44959,-409.59999 -409.59998,-409.59999 z m 0,86.6304 c 178.30399,0 322.96958,144.63999 322.96958,322.96959 0,178.32958 -144.63999,322.96956 -322.96958,322.96956 -178.30399,0 -322.96959,-144.63998 -322.96959,-322.96956 0,-178.3296 144.64,-322.96959 322.96959,-322.96959 z M 454.40001,730.1632 c 0,-92.05759 0,-184.14079 0,-276.19838 34.6112,0 69.22239,0 103.83359,0 0,92.05759 0,184.14079 0,276.19838 -34.6112,0 -69.22239,0 -103.83359,0 z m -8.2432,-390.52797 c 0,-32.33281 27.62239,-57.13921 59.95519,-57.13921 32.3328,0 59.9552,24.8064 59.9552,57.13921 0,32.33279 -27.6224,57.13919 -59.9552,57.13919 -32.3328,0 -59.95519,-24.8064 -59.95519,-57.13919 z"></path>
+                  </svg>
+                </x-major>
+              </prime-seg>
+              <div class="drawer" id="checkInThreshold">
+                <h6>Notify After: </h6>
+                <p class="pseudo-sub">Send alert if a device hasn't checked in for over:</p>
+                <prime-seg>
+                  <x-minor>
+                    <div class="rack vertical-center">
+                      <select class="notify-time-box">
+                        <option value="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                      <div>
+                        <h6>hour</h6>
+                      </div>
+                    </div>
+                  </x-minor>
+                  <x-major>
+                    <div class="rack vertical-center">
+                      <select class="notify-time-box">
+                        <option value="">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                      </select>
+                      <div>
+                        <h6>minutes</h6>
+                      </div>
+                    </div>
+                  </x-major>
+                </prime-seg>
+              </div>
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="type-notify-about check store" type="checkbox" name="Disconnects/Reconnects" value="disconnects/reconnects" id="connectivitySelection"/>
+                        <label for="connectivitySelection">Disconnects/Reconnects</label></span>
+                    </div>
+                  </div>
+                </x-minor>
+                <x-major class="relative">
+                  <svg class="info-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="m 506.112,102.40003 c -226.15039,0 -409.599984,183.44959 -409.599984,409.59999 0,226.15038 183.449594,409.59996 409.599984,409.59996 226.15039,0 409.59998,-183.44958 409.59998,-409.59996 0,-226.1504 -183.44959,-409.59999 -409.59998,-409.59999 z m 0,86.6304 c 178.30399,0 322.96958,144.63999 322.96958,322.96959 0,178.32958 -144.63999,322.96956 -322.96958,322.96956 -178.30399,0 -322.96959,-144.63998 -322.96959,-322.96956 0,-178.3296 144.64,-322.96959 322.96959,-322.96959 z M 454.40001,730.1632 c 0,-92.05759 0,-184.14079 0,-276.19838 34.6112,0 69.22239,0 103.83359,0 0,92.05759 0,184.14079 0,276.19838 -34.6112,0 -69.22239,0 -103.83359,0 z m -8.2432,-390.52797 c 0,-32.33281 27.62239,-57.13921 59.95519,-57.13921 32.3328,0 59.9552,24.8064 59.9552,57.13921 0,32.33279 -27.6224,57.13919 -59.9552,57.13919 -32.3328,0 -59.95519,-24.8064 -59.95519,-57.13919 z"></path>
+                  </svg>
+                </x-major>
+              </prime-seg>
+              <prime-seg class="vertical-center">
+                <x-minor>
+                  <div class="is-object"></div>
+                  <div class="checkbox-widget">
+                    <div class="form-element"><span class="checkbox">
+                        <input class="type-notify-about check store" type="checkbox" name="WAN Failovers" value="wan-failovers" id="wanFailoverSelection"/>
+                        <label for="wanFailoverSelection">WAN Failovers</label></span>
+                    </div>
+                  </div>
+                </x-minor>
+                <x-major class="relative">
+                  <svg class="info-icon" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="m 506.112,102.40003 c -226.15039,0 -409.599984,183.44959 -409.599984,409.59999 0,226.15038 183.449594,409.59996 409.599984,409.59996 226.15039,0 409.59998,-183.44958 409.59998,-409.59996 0,-226.1504 -183.44959,-409.59999 -409.59998,-409.59999 z m 0,86.6304 c 178.30399,0 322.96958,144.63999 322.96958,322.96959 0,178.32958 -144.63999,322.96956 -322.96958,322.96956 -178.30399,0 -322.96959,-144.63998 -322.96959,-322.96956 0,-178.3296 144.64,-322.96959 322.96959,-322.96959 z M 454.40001,730.1632 c 0,-92.05759 0,-184.14079 0,-276.19838 34.6112,0 69.22239,0 103.83359,0 0,92.05759 0,184.14079 0,276.19838 -34.6112,0 -69.22239,0 -103.83359,0 z m -8.2432,-390.52797 c 0,-32.33281 27.62239,-57.13921 59.95519,-57.13921 32.3328,0 59.9552,24.8064 59.9552,57.13921 0,32.33279 -27.6224,57.13919 -59.9552,57.13919 -32.3328,0 -59.95519,-24.8064 -59.95519,-57.13919 z"></path>
+                  </svg>
+                </x-major>
+              </prime-seg>
+            </div>
+          </div>
+        </x-minor>
+        <x-major> 
+          <div class="second-wrapper">
+            <div class="clear-wrap">
+              <prime-seg class="vertical-center">
+                <x-major>
+                  <h4>Include Notifications From: </h4>
+                </x-major>
+                <x-minor class="side-by-side-checkbox-option">
+                  <div class="check-all-orgs">
+                    <div class="clear-wrap" style="margin-top: 15px; margin-bottom: 15px">
+                      <div class="is-object"></div>
+                      <div class="checkbox-widget">
+                        <div class="form-element"><span class="checkbox">
+                            <input class="trigger store" type="checkbox" name="All" value="all" id="allOrgs" data-target="#firstOrgDrawer, #secondOrgDrawer, #drawerFor-includeSubOrgs-firstOrg, #drawerFor-includeSubOrgs-secondOrg, #includeOrgDevicesPositionerFor-firstOrg, #includeOrgDevicesPositionerFor-secondOrg" data-select="#firstOrg-includeSubOrgs, .include-org-click-firstOrg, .include-org-click-secondOrg"/>
+                            <label for="allOrgs">All</label></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </x-minor>
+              </prime-seg>
+            </div>
+            <div class="clear-wrap"> 
+              <div class="wrap medium org-wrap">
+                <div class="relative">
+                  <div class="absolute-checkbox2 fade" id="includeOrgDevicesCheckboxFor-firstOrg">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="store" type="checkbox" name="Include Parent Org Devices" value="include-parent-org-devices" id="includeOrgDevicesFor-firstOrg" data-checked="true"/>
+                          <label for="includeOrgDevicesFor-firstOrg">Include Parent Org Devices</label></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="target-area trigger store" id="targetAreaFor-firstOrg" data-target="#checkmarkFor-firstOrg, #includeOrgDevicesPositionerFor-firstOrg, #includeOrgDevicesCheckboxFor-firstOrg, #firstOrgDrawer, #drawerFor-includeSubOrgs-firstOrg" data-untarget="#orgMarkFor-firstOrg" data-select="#firstOrg-includeSubOrgs, .include-org-click-firstOrg"></div>
+                  <prime-seg class="vertical-center no-gap">
+                    <x-minor class="relative">
+                      <div class="org-check">
+                        <div class="org-mark fade activated" id="orgMarkFor-firstOrg"></div>
+                        <div class="org-check-icon">
+                          <svg class="fade checkmark-icon" width="21px" height="21px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="checkmarkFor-firstOrg">
+                            <path d="M 11.395308,539.5897 C 218.51211,710.6617 359.65001,1007.6652 394.17421,956.78009 620.24271,623.45018 809.28081,394.73466 1013.6378,204.73914 1028.6753,190.77178 958.97931,54.139462 934.59281,61.742662 904.48971,71.148102 596.70091,327.74202 409.26801,556.3449 379.39021,592.78394 328.08271,401.35226 266.75021,371.92506 220.51151,349.70682 -21.946092,512.04922 11.395308,539.5897 Z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </x-minor>
+                    <x-major>
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <h5>Veridian Dynamics</h5>
+                        </x-minor>
+                        <x-major class="relative">
+                          <div class="fade" id="includeOrgDevicesPositionerFor-firstOrg">&mdash;&nbsp;&nbsp; </div>
+                          <div class="fade" id="absoluteQualifierFor-firstOrg">&mdash;&nbsp;&nbsp; Org Only</div>
+                        </x-major>
+                      </prime-seg>
+                    </x-major>
+                  </prime-seg>
+                </div>
+                <div class="org-options-wrap dark drawer" id="drawerFor-includeSubOrgs-firstOrg">
+                  <div class="rack">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="store trigger" type="checkbox" name="Include SubOrgs" value="include-suborgs" id="firstOrg-includeSubOrgs" data-target="#firstOrgDrawer, #includeOrgDevicesPositionerFor-firstOrg, #include-org-devices-firstOrg, #includeOrgDevicesCheckboxFor-firstOrg" data-untarget="#absoluteQualifierFor-firstOrg" data-select=".include-org-click-firstOrg"/>
+                          <label for="firstOrg-includeSubOrgs">Include SubOrgs</label></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="drawer" id="firstOrgDrawer">
+                  <prime-seg>
+                    <x-major><a class="select-all trigger" id="firstOrg-selectAll" data-target=".type-suborgFor-firstOrg" data-label="Select All|Unselect All">Select All</a>
+                      <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 15px">
+                        <div class="is-object"></div>
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input class="type-suborgFor-firstOrg include-org-click-firstOrg check store" type="checkbox" name="SubOrg 1" value="suborg-1" id="suborg1For-firstOrg"/>
+                              <label for="suborg1For-firstOrg">SubOrg 1</label></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 15px">
+                        <div class="is-object"></div>
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input class="type-suborgFor-firstOrg include-org-click-firstOrg check store" type="checkbox" name="SubOrg 2" value="suborg-2" id="suborg2For-firstOrg"/>
+                              <label for="suborg2For-firstOrg">SubOrg 2</label></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 15px">
+                        <div class="is-object"></div>
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input class="type-suborgFor-firstOrg include-org-click-firstOrg check store" type="checkbox" name="SubOrg 3" value="suborg-3" id="suborg3For-firstOrg"/>
+                              <label for="suborg3For-firstOrg">SubOrg 3</label></span>
+                          </div>
+                        </div>
+                      </div>
+                    </x-major>
+                    <x-minor>
+                      <div class="checkbox-widget">
+                        <div class="form-element"><span class="checkbox">
+                            <input class="include-org-click-firstOrg store" type="checkbox" name="Include All Future SubOrgs" value="include-all-future-suborgs" id="include-all-future-for-firstOrg"/>
+                            <label for="include-all-future-for-firstOrg">Include All Future SubOrgs</label></span>
+                        </div>
+                      </div>
+                    </x-minor>
+                  </prime-seg>
+                </div>
+              </div>
+              <div class="wrap medium org-wrap">
+                <div class="relative">
+                  <div class="absolute-checkbox2 fade" id="includeOrgDevicesCheckboxFor-secondOrg">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="store" type="checkbox" name="Include Parent Org Devices" value="include-parent-org-devices" id="includeOrgDevicesFor-secondOrg" data-checked="true"/>
+                          <label for="includeOrgDevicesFor-secondOrg">Include Parent Org Devices</label></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="target-area trigger store" id="targetAreaFor-secondOrg" data-target="#checkmarkFor-secondOrg, #includeOrgDevicesPositionerFor-secondOrg, #includeOrgDevicesCheckboxFor-secondOrg, #secondOrgDrawer, #drawerFor-includeSubOrgs-secondOrg" data-untarget="#orgMarkFor-secondOrg" data-select="#secondOrg-includeSubOrgs, .include-org-click-secondOrg"></div>
+                  <prime-seg class="vertical-center no-gap">
+                    <x-minor class="relative">
+                      <div class="org-check">
+                        <div class="org-mark fade activated" id="orgMarkFor-secondOrg"></div>
+                        <div class="org-check-icon">
+                          <svg class="fade checkmark-icon" width="21px" height="21px" viewBox="0 0 1024 1024" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="checkmarkFor-secondOrg">
+                            <path d="M 11.395308,539.5897 C 218.51211,710.6617 359.65001,1007.6652 394.17421,956.78009 620.24271,623.45018 809.28081,394.73466 1013.6378,204.73914 1028.6753,190.77178 958.97931,54.139462 934.59281,61.742662 904.48971,71.148102 596.70091,327.74202 409.26801,556.3449 379.39021,592.78394 328.08271,401.35226 266.75021,371.92506 220.51151,349.70682 -21.946092,512.04922 11.395308,539.5897 Z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </x-minor>
+                    <x-major>
+                      <prime-seg class="vertical-center">
+                        <x-minor>
+                          <h5>Looney Tunes - OC</h5>
+                        </x-minor>
+                        <x-major class="relative">
+                          <div class="fade" id="includeOrgDevicesPositionerFor-secondOrg">&mdash;&nbsp;&nbsp; </div>
+                          <div class="fade" id="absoluteQualifierFor-secondOrg">&mdash;&nbsp;&nbsp; Org Only</div>
+                        </x-major>
+                      </prime-seg>
+                    </x-major>
+                  </prime-seg>
+                </div>
+                <div class="org-options-wrap dark drawer" id="drawerFor-includeSubOrgs-secondOrg">
+                  <div class="rack">
+                    <div class="is-object"></div>
+                    <div class="checkbox-widget">
+                      <div class="form-element"><span class="checkbox">
+                          <input class="store trigger" type="checkbox" name="Include SubOrgs" value="include-suborgs" id="secondOrg-includeSubOrgs" data-target="#secondOrgDrawer, #includeOrgDevicesPositionerFor-secondOrg, #include-org-devices-secondOrg, #includeOrgDevicesCheckboxFor-secondOrg" data-untarget="#absoluteQualifierFor-secondOrg" data-select=".include-org-click-secondOrg"/>
+                          <label for="secondOrg-includeSubOrgs">Include SubOrgs</label></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="drawer" id="secondOrgDrawer">
+                  <prime-seg>
+                    <x-major><a class="select-all trigger" id="secondOrg-selectAll" data-target=".type-suborgFor-secondOrg" data-label="Select All|Unselect All">Select All</a>
+                      <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 15px">
+                        <div class="is-object"></div>
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input class="type-suborgFor-secondOrg include-org-click-secondOrg check store" type="checkbox" name="SubOrg 1" value="suborg-1" id="suborg1For-secondOrg"/>
+                              <label for="suborg1For-secondOrg">SubOrg 1</label></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear-wrap suborg" style="margin-top: 5px; margin-bottom: 15px">
+                        <div class="is-object"></div>
+                        <div class="checkbox-widget">
+                          <div class="form-element"><span class="checkbox">
+                              <input class="type-suborgFor-secondOrg include-org-click-secondOrg check store" type="checkbox" name="SubOrg 2" value="suborg-2" id="suborg2For-secondOrg"/>
+                              <label for="suborg2For-secondOrg">SubOrg 2</label></span>
+                          </div>
+                        </div>
+                      </div>
+                    </x-major>
+                    <x-minor>
+                      <div class="checkbox-widget">
+                        <div class="form-element"><span class="checkbox">
+                            <input class="include-org-click-secondOrg store" type="checkbox" name="Include All Future SubOrgs" value="include-all-future-suborgs" id="include-all-future-for-secondOrg"/>
+                            <label for="include-all-future-for-secondOrg">Include All Future SubOrgs</label></span>
+                        </div>
+                      </div>
+                    </x-minor>
+                  </prime-seg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </x-major>
+      </x-segment>
+    </div>
+  </div>
+</div>
