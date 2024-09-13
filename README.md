@@ -6,7 +6,6 @@
 
 [Notifications - Validate Email](https://optconnect.github.io/Wireframes/notifications-validate-email/notifications-v25c.html) 
 
-[Connected Clients Clean](https://optconnect.github.io/Wireframes/connected-client-devices-clean/device-details.html#finalVersion)
+[Connected Clients Clean](https://optconnect.github.io/Wireframes/connected-client-devices-clean/device-details.html#finalVersion) 
 
-
-[Notifications Enhancements](https://optconnect.github.io/Wireframes/notification-enhancements)
+[Notifications Enhancements](https://optconnect.github.io/Wireframes/notification-enhancements/notifications-v1.html)
